@@ -16,7 +16,7 @@ const TopNavigation = () => {
       </Col>
       <Col xs={9} className="navAnimate">
         <div className="headerDiv">
-          <Button className={locationVal.pathname=='/my-profile'? 'activeDiv':'lnkheaderNav'}  href="/">Home</Button>
+          <Button className={locationVal.pathname=='/MyWebsiteProfile/'? 'activeDiv':'lnkheaderNav'}  href="/">Home</Button>
           <Button className={locationVal.pathname=='/Certifications'? 'activeDiv':'lnkheaderNav'} href="/Certifications">Certifications & Skills</Button>
           <Button className={locationVal.pathname=='/WorkExperience'? 'activeDiv':'lnkheaderNav'} href="/WorkExperience">Work Experience</Button>
      
