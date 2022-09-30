@@ -15,8 +15,8 @@ function App() {
     <Routes>
     
         <Route  path="/MyWebsiteProfile/" element={<Home />} />
-        <Route path="/WorkExperience" element={<WorkExperience />} />
-        <Route path="/Certifications" element={<Certifications />} />
+        <Route path="/MyWebsiteProfile/WorkExperience" element={<WorkExperience />} />
+        <Route path="/MyWebsiteProfile/Certifications" element={<Certifications />} />
       
      
     </Routes>
