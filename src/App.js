@@ -15,7 +15,7 @@ function App() {
     <BrowserRouter basename='/MyWebsiteProfile'>
     <Routes>
     
-        <Route  exact path="/MyWebsiteProfile" element={<Home />} />
+        <Route  exact path="/" element={<Home />} />
         <Route  path="/MyWebsiteProfile/WorkExperience" element={<WorkExperience />} />
         <Route  path="/MyWebsiteProfile/Certifications" element={<Certifications />} />
       
