@@ -4,7 +4,7 @@ import React from 'react';
 import TopNavigation from './components/TopNavigation';
 import Home from './components/Home/Home';
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route,Router } from "react-router-dom";
 import {HashRouter} from 'react-router-dom';
 import Certifications from './components/Certifications/Certifications';
 
@@ -12,16 +12,17 @@ import WorkExperience from './components/WorkExperience/WorkExperience';
 
 function App() {
   return (
-    <BrowserRouter basename="/MyWebsiteProfile">
+    <BrowserRouter basename='/MyWebsiteProfile'>
     <Routes>
     
-        <Route  path="/" element={<Home />} />
-        <Route path="/WorkExperience" element={<WorkExperience />} />
-        <Route path="/Certifications" element={<Certifications />} />
+        <Route  exact path="/MyWebsiteProfile" element={<Home />} />
+        <Route  path="/MyWebsiteProfile/WorkExperience" element={<WorkExperience />} />
+        <Route  path="/MyWebsiteProfile/Certifications" element={<Certifications />} />
       
      
     </Routes>
-  </BrowserRouter>
+    </BrowserRouter>
+  
     // <React.Fragment>
     // <TopNavigation></TopNavigation>
     

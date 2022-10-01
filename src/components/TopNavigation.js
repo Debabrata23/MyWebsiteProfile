@@ -6,6 +6,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Home from './Home/Home';
 import { useLocation } from 'react-router-dom';
+import {Link} from 'react-router-dom'
 const TopNavigation = () => {
    const locationVal=useLocation();
   return (
@@ -16,9 +17,9 @@ const TopNavigation = () => {
       </Col>
       <Col xs={9} className="navAnimate">
         <div className="headerDiv">
-          <Button className={locationVal.pathname=='/'? 'activeDiv':'lnkheaderNav'}  href="/">Home</Button>
-          <Button className={locationVal.pathname=='/Certifications'? 'activeDiv':'lnkheaderNav'} href="/Certifications">Certifications & Skills</Button>
-          <Button className={locationVal.pathname=='/WorkExperience'? 'activeDiv':'lnkheaderNav'} href="/WorkExperience">Work Experience</Button>
+          <Button className={locationVal.pathname=='/MyWebsiteProfile'? 'activeDiv':'lnkheaderNav'}  href="/MyWebsiteProfile">Home</Button>
+          <Button className={locationVal.pathname=='/MyWebsiteProfile/Certifications'? 'activeDiv':'lnkheaderNav'} href="/MyWebsiteProfile/Certifications">Certifications & Skills</Button>
+          <Button className={locationVal.pathname=='//MyWebsiteProfile/WorkExperience'? 'activeDiv':'lnkheaderNav'} href="/MyWebsiteProfile/WorkExperience">Work Experience</Button>
      
          
         </div>
