@@ -12,7 +12,7 @@ import WorkExperience from './components/WorkExperience/WorkExperience';
 
 function App() {
   return (
-    <BrowserRouter basename='/MyWebsiteProfile'>
+    <HashRouter basename='/MyWebsiteProfile'>
     <Routes>
     
         <Route  exact path="/" element={<Home />} />
@@ -21,7 +21,7 @@ function App() {
       
      
     </Routes>
-    </BrowserRouter>
+    </HashRouter>
   
     // <React.Fragment>
     // <TopNavigation></TopNavigation>
