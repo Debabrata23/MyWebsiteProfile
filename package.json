@@ -1,9 +1,8 @@
 {
   "name": "personalprofile",
-  "homepage": "http://Debabrata23.github.io/MyWebsiteProfile",
+  "homepage": "http://Debabrata23.github.io/MyWebsiteProfile/",
   "version": "0.1.0",
   "private": false,
- 
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
@@ -20,6 +19,7 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
     "react-multi-carousel": "^2.8.2",
+    "react-router": "^6.4.1",
     "react-router-dom": "^6.4.1",
     "react-scripts": "5.0.1",
     "styled-components": "^5.3.6",

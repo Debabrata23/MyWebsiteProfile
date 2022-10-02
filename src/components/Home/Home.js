@@ -9,6 +9,8 @@ import PhoneInTalkRoundedIcon from '@mui/icons-material/PhoneInTalkRounded';
 import { useEffect,useState } from 'react';
 import MailOutlineRoundedIcon from '@mui/icons-material/MailOutlineRounded';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import WorkExperience from '../WorkExperience/WorkExperience';
+import Certifications from '../Certifications/Certifications';
 const Home = () => {
     const redirectLink=()=>
     {
@@ -30,7 +32,8 @@ const Home = () => {
     }
   return (
     <Container className="mainContainer">
-    <TopNavigation/>
+    <TopNavigation />
+    <div className='navigateHome'>
     <Row className='maininfo'>
       <Col xs={6} >
          <Row><span className='headerTxt'>Debabrata Saha</span></Row>
@@ -49,6 +52,10 @@ const Home = () => {
          <div class="myimage"><img src={require('../../images/Deb.jpg')} alt="#"/></div>
       </Col>
     </Row>
+    </div>
+    <Certifications/>
+    <WorkExperience/>
+    
     </Container>
   )
 }

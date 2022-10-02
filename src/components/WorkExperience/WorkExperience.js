@@ -7,8 +7,10 @@ import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
 import Card from 'react-bootstrap/Card';
 const WorkExperience = () => {
   return (
-    <Container className="mainContainer">
-    <TopNavigation></TopNavigation>
+    // <Container className="mainContainer">
+    // <TopNavigation></TopNavigation>
+    <div className='workexpdiv'>
+    <Row className="pageheader"><span className="pageheaderspan">WORK EXPERIENCE</span></Row>
     <Row className="workRow">
       <Col xs={4} className="txtCmpheader">
       <DoubleArrowIcon/><span className="workHeader">L&T Infotech: (01/2022 to present)</span>
@@ -148,7 +150,8 @@ const WorkExperience = () => {
         </Row>
     </Col>
     </Row>
-    </Container>
+    </div>
+    // </Container>
   )
 }
 

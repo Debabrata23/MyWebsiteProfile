@@ -42,9 +42,11 @@ const Certifications = () => {
     }
   
   return (
-    <Container className="mainContainer">
-    <TopNavigation></TopNavigation>
-    <Row>
+    // <Container className="mainContainer">
+    // <TopNavigation></TopNavigation>
+    <div className="navigatecertificate">
+    <Row className="pageheader"><span className="pageheaderspan">CERTIFICATION & SKILLS</span></Row>
+    <Row className="certificatediv">
       <Col xs={7} className="maindivSkill">
         <Row className="divSkill">
             <Row className="skillHeader">Skills</Row>
@@ -81,7 +83,8 @@ const Certifications = () => {
         </Row>
       </Col>
     </Row>
-    </Container>
+    </div>
+    // </Container>
   )
 }
 
