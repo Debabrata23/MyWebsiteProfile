@@ -11,7 +11,12 @@ import MailOutlineRoundedIcon from '@mui/icons-material/MailOutlineRounded';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import WorkExperience from '../WorkExperience/WorkExperience';
 import Certifications from '../Certifications/Certifications';
+import { useContext } from 'react';
+import userCOntext from '../TopNavigation'
+import  ScrollAnimation  from 'react-animate-on-scroll';
 const Home = () => {
+  
+  const[offsetvalue,setOffsetCert]=useState();
     const redirectLink=()=>
     {
       window.open('https://www.linkedin.com/in/debabrata-saha-9a6112a2')
@@ -30,10 +35,23 @@ const Home = () => {
             })
         })
     }
+    const clickCert=(props)=>
+    {
+      setOffsetCert(props)
+    }
+    const clickHome=(props)=>
+    {
+
+    }
+    const clickWork=(props)=>
+    {
+
+    }
   return (
     <Container className="mainContainer">
-    <TopNavigation />
+    <TopNavigation/>
     <div className='navigateHome'>
+  
     <Row className='maininfo'>
       <Col xs={6} >
          <Row><span className='headerTxt'>Debabrata Saha</span></Row>
@@ -52,8 +70,9 @@ const Home = () => {
          <div class="myimage"><img src={require('../../images/Deb.jpg')} alt="#"/></div>
       </Col>
     </Row>
+   
     </div>
-    <Certifications/>
+    <Certifications clickCert={clickCert}/>
     <WorkExperience/>
     
     </Container>

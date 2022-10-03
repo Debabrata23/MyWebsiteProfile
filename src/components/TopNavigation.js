@@ -6,11 +6,15 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Home from './Home/Home';
 import { useEffect,useState } from 'react';
-
+import useCOntext from '../components/Context'
 const TopNavigation = () => {
+ 
   const[homeclick,setHome]=useState(true);
   const[workclick,setWork]=useState(false);
-  const[certClick,setCert]=useState(false)
+  const[certClick,setCert]=useState(false);
+  const[homeclickpos,setHomepos]=useState(0);
+  const[workclickpos,setWorkpos]=useState(0);
+  const[certClickpos,setCertpos]=useState(0)
    useEffect(()=>
    {
     window.scrollTo(0, 0);
@@ -28,13 +32,16 @@ const TopNavigation = () => {
     //domcert[0].scrollIntoView(true);
     var element = document.getElementsByClassName('navigatecertificate');
     var headerOffset = 130;
+   
     var elementPosition = element[0].getBoundingClientRect().top;
     var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+    setCertpos(offsetPosition);
     //const workdiv=document.getElementsByClassName('workexpdiv');
     window.scrollTo({
       top: offsetPosition,
       behavior: "smooth"
  });
+
 
    }
    const clickWork=()=>
@@ -46,6 +53,7 @@ const TopNavigation = () => {
     var headerOffset = 120;
     var elementPosition = element[0].getBoundingClientRect().top;
     var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+    setWorkpos(offsetPosition);
     //const workdiv=document.getElementsByClassName('workexpdiv');
     window.scrollTo({
       top: offsetPosition,
@@ -62,6 +70,7 @@ const TopNavigation = () => {
     var headerOffset = 100;
     var elementPosition = element[0].getBoundingClientRect().top;
     var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+    setHomepos(offsetPosition);
     //const workdiv=document.getElementsByClassName('workexpdiv');
     window.scrollTo({
       top: offsetPosition,
@@ -71,7 +80,7 @@ const TopNavigation = () => {
     //homediv[0].scrollIntoView(true);
    }
   return (
-
+  <useCOntext.Provider value={{home:homeclickpos,cert:certClickpos,work:workclickpos}}>
     <Row className='navRow'>
       <Col xs={3} className="navAnimate">
         <span className='homeName'></span>
@@ -86,7 +95,8 @@ const TopNavigation = () => {
         </div>
       </Col>
     </Row>
-
+    </useCOntext.Provider>
+    
 
   )
 }

@@ -1,3 +1,5 @@
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
 .App {
   text-align: center;
 }
@@ -5,6 +7,10 @@
 {
   animation: fadeIn 5s !important;
   height: 500px;
+}
+.animateeffect
+{
+  animation: fadeIn 5s !important;
 }
 .App-logo {
   height: 40vmin;
@@ -201,7 +207,7 @@ body
 .workRow
 {
   margin-top:1% !important;
-  animation: fadeIn 5s !important;
+  animation: fadeIn 5s !important; 
 }
 .activeDiv
 {
@@ -266,7 +272,7 @@ body
   height: 516px !important;
     margin-bottom: 5% !important;
 }
-.certificationCol
+.certificationCol:focus
 {
   margin-top:7% !important;
   animation: fadeIn 5s !important; 
@@ -280,7 +286,7 @@ body
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
-.divSkill
+.divSkill:focus
 {
   margin-top: 12% !important;
   border-radius: 14px !important;

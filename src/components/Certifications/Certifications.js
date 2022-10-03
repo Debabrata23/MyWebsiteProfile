@@ -8,7 +8,9 @@ import Button from 'react-bootstrap/Button';
 import DownloadRoundedIcon from '@mui/icons-material/DownloadRounded';
 import PL900 from '../../pdfs/PL900.pdf';
 import PL400 from '../../pdfs/PL400.pdf'
-const Certifications = () => {
+import  ScrollAnimation  from 'react-animate-on-scroll';
+const Certifications = (props) => {
+  
   const clickDownloadCert=()=>
   {
    
@@ -45,7 +47,8 @@ const Certifications = () => {
     // <Container className="mainContainer">
     // <TopNavigation></TopNavigation>
     <div className="navigatecertificate">
-    <Row className="pageheader"><span className="pageheaderspan">CERTIFICATION & SKILLS</span></Row>
+    <ScrollAnimation animateIn='animate_bounceInRight'><Row className="pageheader"><span className="pageheaderspan">CERTIFICATION & SKILLS</span></Row></ScrollAnimation>
+    <ScrollAnimation animateIn='animate_bounceInRight'>
     <Row className="certificatediv">
       <Col xs={7} className="maindivSkill">
         <Row className="divSkill">
@@ -83,6 +86,7 @@ const Certifications = () => {
         </Row>
       </Col>
     </Row>
+    </ScrollAnimation>
     </div>
     // </Container>
   )
