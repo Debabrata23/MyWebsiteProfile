@@ -4,7 +4,7 @@ import TopNavigation from '../TopNavigation';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
-import  ScrollAnimation  from 'react-animate-on-scroll';
+import ScrollAnimation from 'react-animate-on-scroll';
 import Card from 'react-bootstrap/Card';
 import useCOntext from '../Context'
 import { useContext } from 'react';
@@ -16,19 +16,19 @@ const WorkExperience = () => {
     // <Container className="mainContainer">
     // <TopNavigation></TopNavigation>
     <div className='workexpdiv'>
-    <Row className="pageheader"><ScrollAnimation animateIn='animate__bounceInRight'><span className="pageheaderspan">WORK EXPERIENCE</span></ScrollAnimation></Row>
+      <Row className="pageheader"><ScrollAnimation animateIn='animate__bounceInRight'><span className="pageheaderspan">WORK EXPERIENCE</span></ScrollAnimation></Row>
       <ScrollAnimation animateIn="animate__bounceInRight" >
         <Row className="workRow">
-          <Col sm={4} className="txtCmpheader">
-          <div className="workHeader"><img  className="imgCmp" src={require('../../images/LTI_Lets_solve.png')}/><div>(Jan 2022 - Present)</div></div>
+          <Col lg={true} className="txtCmpheader">
+            <div className="workHeader"><img className="imgCmp" src={require('../../images/LTI_Lets_solve.png')} /><div>(Jan 2022 - Present)</div></div>
           </Col>
-          <Col sm={8} className="detailCol">
+          <Col lg={true} className="detailCol">
             <Row className='expDetails'>
-              <Row className="expHeader"><span className="role">Designation : Specialist Software Engineer</span><span className="cmpname">LTI</span></Row>
+              <Row className="expHeader"><span className="role">Designation : Specialist Software Engineer</span></Row>
               <Row><span className="subtile">Team Size : 5</span></Row>
               <Row><span className="subtile">Technology Used: <div><div className='techdiv'>SharePoint Online</div><div className='techdiv'>SQL</div><div className='techdiv'>PowerApps</div><div className='techdiv'>Power Automate</div><div className='techdiv'>Rest API</div></div></span></Row>
-              <Row className="mainDescRow"><Col sm={3}><span className='mainDesc'>Responsibility</span></Col>
-                <Col sm={9}>
+              <Row className="mainDescRow"><Col lg={true}><span className='mainDesc'>Responsibility</span></Col>
+                <Col lg={true}>
                   <ul>
                     <li className='descriptionpoint'>Responsible in architechting the application backend in Azure SQL</li>
                     <li className='descriptionpoint'>Creating Views and Procedure in Azure SQL for screen in PowerApps</li>
@@ -45,16 +45,16 @@ const WorkExperience = () => {
       </ScrollAnimation>
       <ScrollAnimation animateIn="animate__bounceInRight" >
         <Row className="workRow">
-          <Col sm={4} className="txtCmpheader">
-          <div className="workHeader"><img  className="imgCmp" src={require('../../images/EY.png')}/><div>(May 2021 - Jan 2022)</div></div>
+          <Col lg={true} className="txtCmpheader">
+            <div className="workHeader"><img className="imgCmp" src={require('../../images/EY.png')} /><div>(May 2021 - Jan 2022)</div></div>
           </Col>
-          <Col sm={8} className="detailCol">
+          <Col lg={true} className="detailCol">
             <Row className='expDetails'>
-              <Row className="expHeader"><span className="role">Designation : Tax Senior</span><span className="cmpname">EY GDS</span></Row>
+              <Row className="expHeader"><span className="role">Designation : Tax Senior</span></Row>
               <Row><span className="subtile">Team Size : 10</span></Row>
               <Row><span className="subtile">Technology Used: <div><div className='techdiv'>SharePoint Online</div><div className='techdiv'>SP PNP js</div><div className='techdiv'>SPFX</div><div className='techdiv'>React Js</div><div className='techdiv'>Javascript</div><div className='techdiv'>Power Automate</div><div className='techdiv'>Rest API</div><div className='techdiv'>CSOM</div></div></span></Row>
-              <Row className="mainDescRow"><Col sm={3}><span className='mainDesc'>Responsibility</span></Col>
-                <Col sm={9}>
+              <Row className="mainDescRow"><Col lg={true}><span className='mainDesc'>Responsibility</span></Col>
+                <Col lg={true}>
                   <ul>
                     <li className='descriptionpoint'>Responsible in developing the Commercial application for internal client of EY using SPFX</li>
                     <li className='descriptionpoint'>Creating List View Extension for customization in default List of sharepoint</li>
@@ -73,16 +73,16 @@ const WorkExperience = () => {
       </ScrollAnimation>
       <ScrollAnimation animateIn="animate__bounceInRight">
         <Row className="workRow">
-          <Col sm={4} className="txtCmpheader">
-          <div className="workHeader"><img  className="imgCmp" src={require('../../images/pwc.png')}/><div>(Nov 2019 - Apr 2021)</div></div>
+          <Col lg={true} className="txtCmpheader">
+            <div className="workHeader"><img className="imgCmp" src={require('../../images/pwc.png')} /><div>(Nov 2019 - Apr 2021)</div></div>
           </Col>
-          <Col sm={8} className="detailCol">
+          <Col lg={true} className="detailCol">
             <Row className='expDetails'>
-              <Row className="expHeader"><span className="role">Designation : Technology Consulting</span><span className="cmpname">PWC India</span></Row>
+              <Row className="expHeader"><span className="role">Designation : Technology Consulting</span></Row>
               <Row><span className="subtile">Team Size : 3</span></Row>
               <Row><span className="subtile">Technology Used: <div><div className='techdiv'>SharePoint Online</div><div className='techdiv'>SP PNP js</div><div className='techdiv'>SPFX</div><div className='techdiv'>React Js</div><div className='techdiv'>Javascript</div><div className='techdiv'>Power Automate</div><div className='techdiv'>Rest API</div></div></span></Row>
-              <Row className="mainDescRow"><Col sm={3}><span className='mainDesc'>Responsibility</span></Col>
-                <Col sm={9}>
+              <Row className="mainDescRow"><Col lg={true}><span className='mainDesc'>Responsibility</span></Col>
+                <Col lg={true}>
                   <ul>
                     <li className='descriptionpoint'>Responsible in development of Iportal Document management website from scratch</li>
                     <li className='descriptionpoint'>Make use of JQuery and Javascripty in SPFX for customization</li>
@@ -99,16 +99,16 @@ const WorkExperience = () => {
       </ScrollAnimation>
       <ScrollAnimation animateIn="animate__bounceInRight">
         <Row className="workRow">
-          <Col sm={4} className="txtCmpheader">
-            <div className="workHeader"><img  className="imgCmp" src={require('../../images/mindtree.png')}/><div>(Feb 2019 - Nov 2019)</div></div>
+          <Col lg={true} className="txtCmpheader">
+            <div className="workHeader"><img className="imgCmp" src={require('../../images/mindtree.png')} /><div>(Feb 2019 - Nov 2019)</div></div>
           </Col>
-          <Col sm={8} className="detailCol">
+          <Col lg={true} className="detailCol">
             <Row className='expDetails'>
-              <Row className="expHeader"><span className="role">Designation : Senior Software Engineer</span><span className="cmpname">Mindtree Ltd</span></Row>
+              <Row className="expHeader"><span className="role">Designation : Senior Software Engineer</span></Row>
               <Row><span className="subtile">Team Size : 10</span></Row>
               <Row><span className="subtile">Technology Used: <div><div className='techdiv'>SharePoint Online</div><div className='techdiv'>SP PNP js</div><div className='techdiv'>SPFX</div><div className='techdiv'>React Js</div><div className='techdiv'>Javascript</div><div className='techdiv'>Power Automate</div><div className='techdiv'>Rest API</div><div className='techdiv'>CSOM</div><div className='techdiv'>Angular JS</div></div></span></Row>
-              <Row className="mainDescRow"><Col sm={3}><span className='mainDesc'>Responsibility</span></Col>
-                <Col sm={9}>
+              <Row className="mainDescRow"><Col lg={true}><span className='mainDesc'>Responsibility</span></Col>
+                <Col lg={true}>
                   <ul>
                     <li className='descriptionpoint'>Revamping of the People Hub portal for US based client using SPFX and React</li>
                     <li className='descriptionpoint'>Creating Application customizer for development of the site design</li>
@@ -123,16 +123,16 @@ const WorkExperience = () => {
       </ScrollAnimation>
       <ScrollAnimation animateIn="animate__bounceInRight" >
         <Row className="workRow">
-          <Col sm={4} className="txtCmpheader">
-          <div className="workHeader"><img  className="imgCmp" src={require('../../images/acuvate.png')}/><div>(Nov 2016 - Feb 2019)</div></div>
+          <Col lg={true} className="txtCmpheader">
+            <div className="workHeader"><img className="imgCmp" src={require('../../images/acuvate.png')} /><div>(Nov 2016 - Feb 2019)</div></div>
           </Col>
-          <Col sm={8} className="detailCol">
+          <Col lg={true} className="detailCol">
             <Row className='expDetails'>
-              <Row className="expHeader"><span className="role">Designation : Software Engineer</span><span className="cmpname">Acuvate Software PvT LTD</span></Row>
+              <Row className="expHeader"><span className="role">Designation : Software Engineer</span></Row>
               <Row><span className="subtile">Team Size : 3</span></Row>
               <Row><span className="subtile">Technology Used: <div><div className='techdiv'>SharePoint 2013</div><div className='techdiv'>Provider Hosted App</div><div className='techdiv'>JQuery</div><div className='techdiv'>Javascript</div><div className='techdiv'>Dot Net</div><div className='techdiv'>Visual Webpart</div><div className='techdiv'>Content Editor webpart</div><div className='techdiv'>Script Editor Webpart</div><div className='techdiv'>SSOM</div><div className='techdiv'>JSOM</div><div className='techdiv'>CSOM</div></div></span></Row>
-              <Row className="mainDescRow"><Col sm={3}><span className='mainDesc'>Responsibility</span></Col>
-                <Col sm={9}>
+              <Row className="mainDescRow"><Col lg={true}><span className='mainDesc'>Responsibility</span></Col>
+                <Col lg={true}>
                   <ul>
                     <li className='descriptionpoint'>Responsible in creating a module using dot net and SSOM code</li>
                     <li className='descriptionpoint'>Worked in Custom Webpart using Visual Studio and deploying the WSP IN shharepoint 2013</li>
@@ -148,17 +148,17 @@ const WorkExperience = () => {
       </ScrollAnimation>
       <ScrollAnimation animateIn="animate__bounceInRight" >
         <Row className="workRow">
-          <Col sm={4} className="txtCmpheader">
-            <div className="workHeader"><img  className="imgCmp" src={require('../../images/tcs.png')}/><div>(Apr 2016 - Oct 2016)</div></div>
+          <Col lg={true} className="txtCmpheader">
+            <div className="workHeader"><img className="imgCmp" src={require('../../images/tcs.png')} /><div>(Apr 2016 - Oct 2016)</div></div>
           </Col>
-          <Col sm={8} className="detailCol">
+          <Col lg={true} className="detailCol">
             <Row className='expDetails'>
-              <Row className="expHeader"><span className="role">Designation : Contract Assignee</span><span className="cmpname">CMC LTD</span></Row>
-              
+              <Row className="expHeader"><span className="role">Designation : Contract Assignee</span></Row>
+
               <Row><span className="subtile">Team Size : 2</span></Row>
               <Row><span className="subtile">Technology Used: <div><div className='techdiv'>SQL</div></div></span></Row>
-              <Row className="mainDescRow"><Col sm={3}><span className='mainDesc'>Responsibility</span></Col>
-                <Col sm={9}>
+              <Row className="mainDescRow"><Col lg={true}><span className='mainDesc'>Responsibility</span></Col>
+                <Col lg={true}>
                   <ul>
                     <li className='descriptionpoint'>Provide support for a client in SQL</li>
                     <li className='descriptionpoint'>Creating procedure and functions in SQL</li>

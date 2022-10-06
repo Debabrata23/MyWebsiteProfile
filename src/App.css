@@ -6,7 +6,8 @@
 .maininfo
 {
   animation: fadeIn 5s !important;
-  height: 500px;
+  height: 100%;
+  
 }
 .animateeffect
 {
@@ -29,6 +30,11 @@ body
 {
   scroll-behavior: smooth !important
 }
+.descriptionHome
+{
+  margin-inline: 11% !important;
+    padding: 2% !important;
+}
 .navigatecertificate
 {
   background-image: linear-gradient(110.3deg,#031603 ,#231362  );
@@ -37,7 +43,7 @@ body
 .navigateHome
 {
   background-image: linear-gradient(110.3deg,#031603 ,#231362 );
-  margin-top:3%
+  margin-top:10%
 }
 .workexpdiv
 {
@@ -103,9 +109,11 @@ body
 {
   color: antiquewhite;
     font-size: 78%;
-    width: 70%;
+   
     margin-top: 2%;
     margin-left: 21%;
+    word-break: break-all;
+    width: 54% !important;
 }
 
 /*------Animation------*/
@@ -135,6 +143,7 @@ body
 }
 .expHeader
 {
+  padding: 2% !important;
   backface-visibility: visible !important;
   background: linear-gradient(110.3deg, rgb(13, 13, 12) 8.7%, rgb(112, 81, 74) 47.5%, rgb(235, 229, 230) 89.1%) !important;
     border-top-left-radius: 23px !important;
@@ -145,6 +154,7 @@ body
 .expDetails
 {
   background-color: black !important;
+  margin-inline: 4% !important;
     border-left: white 2px solid !important;
     border-top-left-radius: 23px !important;
     border-bottom-right-radius: 23px !important;
@@ -205,7 +215,7 @@ body
 }
 .imgCmp
 {
-  width: 43%;
+  width: 25%;
     
 }
 .cmpname
@@ -253,7 +263,10 @@ body
 
 .workHeader
 {
-  margin-left:19% !important;
+  padding: 10px 0;
+        display: flex;
+        justify-content: center;
+  
   
 }
 .abtmeinfo

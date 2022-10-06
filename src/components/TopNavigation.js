@@ -82,10 +82,10 @@ const TopNavigation = () => {
   return (
   <useCOntext.Provider value={{home:homeclickpos,cert:certClickpos,work:workclickpos}}>
     <Row className='navRow'>
-      <Col xs={3} className="navAnimate">
+      <Col lg={true} className="navAnimate">
         <span className='homeName'></span>
       </Col>
-      <Col xs={9} className="navAnimate">
+      <Col lg={true} className="navAnimate">
         <div className="headerDiv">
           <Button className={homeclick? 'activeDiv':'lnkheaderNav'} onClick={()=>clickHome()} >Home</Button>
           <Button className={certClick? 'activeDiv':'lnkheaderNav'} onClick={()=>clickCert()} >Certifications & Skills</Button>
