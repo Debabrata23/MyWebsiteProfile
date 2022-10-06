@@ -33,7 +33,7 @@ body
 .descriptionHome
 {
   margin-inline: 11% !important;
-    padding: 2% !important;
+    padding: 4% !important;
 }
 .navigatecertificate
 {
@@ -352,6 +352,7 @@ body
 {
   
     margin-bottom: 5% !important;
+    padding: 4% !important;
 }
 .techdiv
 {
@@ -403,7 +404,7 @@ body
 .skillHeader
 {
   margin-bottom: 4% !important;
-    margin-left: 0% !important;
+    margin-left: 4% !important;
     font-weight: 500 !important;
     color: white !important;
     height:30% !important;
