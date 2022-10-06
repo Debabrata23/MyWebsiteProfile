@@ -50,34 +50,34 @@ const Certifications = (props) => {
     <ScrollAnimation animateIn='animate__bounceInRight'><Row className="pageheader"><span className="pageheaderspan">CERTIFICATION & SKILLS</span></Row></ScrollAnimation>
    
     <Row className="certificatediv">
-      <Col xs={7} className="maindivSkill">
+      <Col sm={7} className="maindivSkill">
       <ScrollAnimation animateIn='animate__bounceInRight'>
         <Row className="divSkill">
             <Row className="skillHeader">Skills</Row>
            <Row>
-           <Col xs={6}><div className='imageskill'><img  className="imgdata" alt="#" src={require('../../images/ms-share-point.png')}/>  <ProgressBar now={80} variant="info" animated label={`${80}%`}/></div></Col>
-           <Col xs={6}><div className='imageskill'><img  className="imgdata" alt="#" src={require('../../images/microsoft-sharepoint-2019.png')}/> <ProgressBar now={70} variant="info" animated label={`${70}%`}/></div></Col>
+           <Col sm={6}><div className='imageskill'><img  className="imgdata" alt="#" src={require('../../images/ms-share-point.png')}/>  <ProgressBar now={80} variant="info" animated label={`${80}%`}/></div></Col>
+           <Col sm={6}><div className='imageskill'><img  className="imgdata" alt="#" src={require('../../images/microsoft-sharepoint-2019.png')}/> <ProgressBar now={70} variant="info" animated label={`${70}%`}/></div></Col>
            </Row>
            <Row>
-           <Col xs={6}><div className='imageskill'><img  className="imgdata" alt="#" src={require('../../images/JS.png')}/>  <ProgressBar now={80} variant="info" animated label={`${80}%`}/></div></Col>
-           <Col xs={6}><div className='imageskill'><img  className="imgdata" alt="#" src={require('../../images/react-native.png')}/> <ProgressBar variant="info" animated now={80} label={`${80}%`}/></div></Col>
+           <Col sm={6}><div className='imageskill'><img  className="imgdata" alt="#" src={require('../../images/JS.png')}/>  <ProgressBar now={80} variant="info" animated label={`${80}%`}/></div></Col>
+           <Col sm={6}><div className='imageskill'><img  className="imgdata" alt="#" src={require('../../images/react-native.png')}/> <ProgressBar variant="info" animated now={80} label={`${80}%`}/></div></Col>
            </Row>
            <Row>
-           <Col xs={6}><div className='imageskill'><img  className="imgdata" alt="#" src={require('../../images/jquery.png')}/> <ProgressBar variant="info" animated now={70} label={`${70}%`}/></div></Col>
+           <Col sm={6}><div className='imageskill'><img  className="imgdata" alt="#" src={require('../../images/jquery.png')}/> <ProgressBar variant="info" animated now={70} label={`${70}%`}/></div></Col>
            </Row>
            <Row>
-           <Col xs={6}><div className='imageskill'><img  className="imgdata" alt="#" src={require('../../images/microsoft-power-apps-2020.png')}/>  <ProgressBar variant="info" animated now={85} label={`${85}%`}/></div></Col>
-           <Col xs={6}><div className='imageskill'><img  className="imgdata" alt="#" src={require('../../images/microsoft-power-automate-2020.png')}/> <ProgressBar variant="info" animated now={80} label={`${80}%`}/></div></Col>
+           <Col sm={6}><div className='imageskill'><img  className="imgdata" alt="#" src={require('../../images/microsoft-power-apps-2020.png')}/>  <ProgressBar variant="info" animated now={85} label={`${85}%`}/></div></Col>
+           <Col sm={6}><div className='imageskill'><img  className="imgdata" alt="#" src={require('../../images/microsoft-power-automate-2020.png')}/> <ProgressBar variant="info" animated now={80} label={`${80}%`}/></div></Col>
            </Row>
            <Row>
-           <Col xs={6}><div className='imageskill'><img  className="imgdata" alt="#" src={require('../../images/api-settings.png')}/>  <ProgressBar variant="info" animated now={75} label={`${75}%`}/></div></Col>
-           <Col xs={6}><div className='imageskill'><img  className="imgdata" alt="#" src={require('../../images/typescript.png')}/> <ProgressBar variant="info" animated now={70} label={`${70}%`}/></div></Col>
+           <Col sm={6}><div className='imageskill'><img  className="imgdata" alt="#" src={require('../../images/api-settings.png')}/>  <ProgressBar variant="info" animated now={75} label={`${75}%`}/></div></Col>
+           <Col sm={6}><div className='imageskill'><img  className="imgdata" alt="#" src={require('../../images/typescript.png')}/> <ProgressBar variant="info" animated now={70} label={`${70}%`}/></div></Col>
            </Row>
         </Row>
         </ScrollAnimation>
       </Col>
       
-      <Col xs={5} className="certificationCol">
+      <Col sm={5} className="certificationCol">
       <ScrollAnimation animateIn='animate__fadeIn'>
         <Row>
            <div><img className="imgCert" src={require('../../images/CERT-Fundamentals-Power-Platform.png')}/><span className="certTiltle">Microsoft Certified Power Platform Fundamental</span></div>
