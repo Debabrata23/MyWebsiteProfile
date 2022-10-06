@@ -14,6 +14,7 @@ import Certifications from '../Certifications/Certifications';
 import { useContext } from 'react';
 import userCOntext from '../TopNavigation'
 import  ScrollAnimation  from 'react-animate-on-scroll';
+
 const Home = () => {
   
   const[offsetvalue,setOffsetCert]=useState();
@@ -51,8 +52,9 @@ const Home = () => {
     <Container className="mainContainer">
     <TopNavigation/>
     <div className='navigateHome'>
-  
+   
     <Row className='maininfo'>
+   
       <Col xs={6} >
          <Row><span className='headerTxt'>Debabrata Saha</span></Row>
          <Row><strong><span className='abtmetxt'>About me</span></strong></Row>
@@ -63,12 +65,16 @@ const Home = () => {
          <Row><span className='abtmeinfo'><PhoneInTalkRoundedIcon/> :9874345299</span></Row>
          <Row><span className='abtmeinfo'><MailOutlineRoundedIcon/><a href = "mailto: debabrata18992@gmail.com"> :debabrata18992@gmail.com</a></span></Row>
          <Row><span className='abtmeinfo'><LinkedInIcon color='blue' onClick={()=>redirectLink()}/> : LinkedIn</span></Row>
-
+      
          </Col></Row>
       </Col>
+    
+      
       <Col xs={6}>
+      
          <div class="myimage"><img src={require('../../images/Deb.jpg')} alt="#"/></div>
       </Col>
+     
     </Row>
    
     </div>

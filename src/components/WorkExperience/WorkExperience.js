@@ -16,7 +16,7 @@ const WorkExperience = () => {
     // <Container className="mainContainer">
     // <TopNavigation></TopNavigation>
     <div className='workexpdiv'>
-    <Row className="pageheader"><ScrollAnimation animateIn='animate_bounceInRight'><span className="pageheaderspan">WORK EXPERIENCE</span></ScrollAnimation></Row>
+    <Row className="pageheader"><ScrollAnimation animateIn='animate__bounceInRight'><span className="pageheaderspan">WORK EXPERIENCE</span></ScrollAnimation></Row>
       <ScrollAnimation animateIn="animate__bounceInRight" >
         <Row className="workRow">
           <Col xs={4} className="txtCmpheader">

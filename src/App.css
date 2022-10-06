@@ -272,10 +272,11 @@ body
   height: 516px !important;
     margin-bottom: 5% !important;
 }
-.certificationCol:focus
+.certificationCol
 {
   margin-top:7% !important;
-  animation: fadeIn 5s !important; 
+  /* margin-top: 4% !important;
+    margin-left: 6% !important; */
 }
 .imgdata
 {
