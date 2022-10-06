@@ -63,7 +63,6 @@ const Certifications = (props) => {
            <Col xs={6}><div className='imageskill'><img  className="imgdata" alt="#" src={require('../../images/react-native.png')}/> <ProgressBar variant="info" animated now={80} label={`${80}%`}/></div></Col>
            </Row>
            <Row>
-           <Col xs={6}><div className='imageskill'><img  className="imgdata" alt="#" src={require('../../images/redux.png')}/>  <ProgressBar variant="info" animated now={60} label={`${60}%`}/></div></Col>
            <Col xs={6}><div className='imageskill'><img  className="imgdata" alt="#" src={require('../../images/jquery.png')}/> <ProgressBar variant="info" animated now={70} label={`${70}%`}/></div></Col>
            </Row>
            <Row>

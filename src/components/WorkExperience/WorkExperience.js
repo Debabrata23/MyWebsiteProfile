@@ -20,13 +20,13 @@ const WorkExperience = () => {
       <ScrollAnimation animateIn="animate__bounceInRight" >
         <Row className="workRow">
           <Col xs={4} className="txtCmpheader">
-            <DoubleArrowIcon /><span className="workHeader">L&T Infotech: (01/2022 to present)</span>
+          <div className="workHeader"><img  className="imgCmp" src={require('../../images/LTI_Lets_solve.png')}/><div>(Jan 2022 - Present)</div></div>
           </Col>
           <Col xs={8} className="detailCol">
             <Row className='expDetails'>
-              <Row className="expHeader"><span className="role">Designation : Specialist Software Engineer</span></Row>
+              <Row className="expHeader"><span className="role">Designation : Specialist Software Engineer</span><span className="cmpname">LTI</span></Row>
               <Row><span className="subtile">Team Size : 5</span></Row>
-              <Row><span className="subtile">Technology Used: SharePoint Online,SQL,PowerApps,Power Automate,Rest API</span></Row>
+              <Row><span className="subtile">Technology Used: <div><div className='techdiv'>SharePoint Online</div><div className='techdiv'>SQL</div><div className='techdiv'>PowerApps</div><div className='techdiv'>Power Automate</div><div className='techdiv'>Rest API</div></div></span></Row>
               <Row className="mainDescRow"><Col xs={3}><span className='mainDesc'>Responsibility</span></Col>
                 <Col xs={9}>
                   <ul>
@@ -46,13 +46,13 @@ const WorkExperience = () => {
       <ScrollAnimation animateIn="animate__bounceInRight" >
         <Row className="workRow">
           <Col xs={4} className="txtCmpheader">
-            <DoubleArrowIcon /><span className="workHeader">EY GDS: (05/2021 to 01/2022)</span>
+          <div className="workHeader"><img  className="imgCmp" src={require('../../images/EY.png')}/><div>(May 2021 - Jan 2022)</div></div>
           </Col>
           <Col xs={8} className="detailCol">
             <Row className='expDetails'>
-              <Row className="expHeader"><span className="role">Designation : Tax Senior</span></Row>
+              <Row className="expHeader"><span className="role">Designation : Tax Senior</span><span className="cmpname">EY GDS</span></Row>
               <Row><span className="subtile">Team Size : 10</span></Row>
-              <Row><span className="subtile">Technology Used: <b>SharePoint Online,SP PNP js,SPFX,React Js,Javascript,Redux,Power Automate,Rest API,CSOM</b></span></Row>
+              <Row><span className="subtile">Technology Used: <div><div className='techdiv'>SharePoint Online</div><div className='techdiv'>SP PNP js</div><div className='techdiv'>SPFX</div><div className='techdiv'>React Js</div><div className='techdiv'>Javascript</div><div className='techdiv'>Power Automate</div><div className='techdiv'>Rest API</div><div className='techdiv'>CSOM</div></div></span></Row>
               <Row className="mainDescRow"><Col xs={3}><span className='mainDesc'>Responsibility</span></Col>
                 <Col xs={9}>
                   <ul>
@@ -74,13 +74,13 @@ const WorkExperience = () => {
       <ScrollAnimation animateIn="animate__bounceInRight">
         <Row className="workRow">
           <Col xs={4} className="txtCmpheader">
-            <DoubleArrowIcon /><span className="workHeader">PwC India: (10/2019 to 04/2021)</span>
+          <div className="workHeader"><img  className="imgCmp" src={require('../../images/pwc.png')}/><div>(Nov 2019 - Apr 2021)</div></div>
           </Col>
           <Col xs={8} className="detailCol">
             <Row className='expDetails'>
-              <Row className="expHeader"><span className="role">Designation : Technology Consulting</span></Row>
+              <Row className="expHeader"><span className="role">Designation : Technology Consulting</span><span className="cmpname">PWC India</span></Row>
               <Row><span className="subtile">Team Size : 3</span></Row>
-              <Row><span className="subtile">Technology Used: <b>SharePoint Online,SP PNP js,SPFX,React Js,Javascript,Power Automate,Rest API,CSOM</b></span></Row>
+              <Row><span className="subtile">Technology Used: <div><div className='techdiv'>SharePoint Online</div><div className='techdiv'>SP PNP js</div><div className='techdiv'>SPFX</div><div className='techdiv'>React Js</div><div className='techdiv'>Javascript</div><div className='techdiv'>Power Automate</div><div className='techdiv'>Rest API</div></div></span></Row>
               <Row className="mainDescRow"><Col xs={3}><span className='mainDesc'>Responsibility</span></Col>
                 <Col xs={9}>
                   <ul>
@@ -100,13 +100,13 @@ const WorkExperience = () => {
       <ScrollAnimation animateIn="animate__bounceInRight">
         <Row className="workRow">
           <Col xs={4} className="txtCmpheader">
-            <DoubleArrowIcon /><span className="workHeader">Mindtree Ltd: (02/2019 to 10/2019)</span>
+            <div className="workHeader"><img  className="imgCmp" src={require('../../images/mindtree.png')}/><div>(Feb 2019 - Nov 2019)</div></div>
           </Col>
           <Col xs={8} className="detailCol">
             <Row className='expDetails'>
-              <Row className="expHeader"><span className="role">Designation : Specialist Software Engineer</span></Row>
+              <Row className="expHeader"><span className="role">Designation : Senior Software Engineer</span><span className="cmpname">Mindtree Ltd</span></Row>
               <Row><span className="subtile">Team Size : 10</span></Row>
-              <Row><span className="subtile">Technology Used: <b>SharePoint Online,SP PNP js,SPFX,React Js,Javascript,Power Automate,Rest API,CSOM,Angular JS</b></span></Row>
+              <Row><span className="subtile">Technology Used: <div><div className='techdiv'>SharePoint Online</div><div className='techdiv'>SP PNP js</div><div className='techdiv'>SPFX</div><div className='techdiv'>React Js</div><div className='techdiv'>Javascript</div><div className='techdiv'>Power Automate</div><div className='techdiv'>Rest API</div><div className='techdiv'>CSOM</div><div className='techdiv'>Angular JS</div></div></span></Row>
               <Row className="mainDescRow"><Col xs={3}><span className='mainDesc'>Responsibility</span></Col>
                 <Col xs={9}>
                   <ul>
@@ -124,13 +124,13 @@ const WorkExperience = () => {
       <ScrollAnimation animateIn="animate__bounceInRight" >
         <Row className="workRow">
           <Col xs={4} className="txtCmpheader">
-            <DoubleArrowIcon /><span className="workHeader">Acuvate Software: (10/2016 to 02/2019)</span>
+          <div className="workHeader"><img  className="imgCmp" src={require('../../images/acuvate.png')}/><div>(Nov 2016 - Feb 2019)</div></div>
           </Col>
           <Col xs={8} className="detailCol">
             <Row className='expDetails'>
-              <Row className="expHeader"><span className="role">Designation : Software Engineer</span></Row>
+              <Row className="expHeader"><span className="role">Designation : Software Engineer</span><span className="cmpname">Acuvate Software PvT LTD</span></Row>
               <Row><span className="subtile">Team Size : 3</span></Row>
-              <Row><span className="subtile">Technology Used: SharePoint 2013,Provider Hosted App,JQuery,Javascript,Dot Net,Visual Webpart,Content Editor webpart,Script Editor Webpart,SSOM,JSOM,CSOM</span></Row>
+              <Row><span className="subtile">Technology Used: <div><div className='techdiv'>SharePoint 2013</div><div className='techdiv'>Provider Hosted App</div><div className='techdiv'>JQuery</div><div className='techdiv'>Javascript</div><div className='techdiv'>Dot Net</div><div className='techdiv'>Visual Webpart</div><div className='techdiv'>Content Editor webpart</div><div className='techdiv'>Script Editor Webpart</div><div className='techdiv'>SSOM</div><div className='techdiv'>JSOM</div><div className='techdiv'>CSOM</div></div></span></Row>
               <Row className="mainDescRow"><Col xs={3}><span className='mainDesc'>Responsibility</span></Col>
                 <Col xs={9}>
                   <ul>
@@ -149,13 +149,14 @@ const WorkExperience = () => {
       <ScrollAnimation animateIn="animate__bounceInRight" >
         <Row className="workRow">
           <Col xs={4} className="txtCmpheader">
-            <DoubleArrowIcon /><span className="workHeader">CMC LTD (04/2016 to 10/2016)</span>
+            <div className="workHeader"><img  className="imgCmp" src={require('../../images/tcs.png')}/><div>(Apr 2016 - Oct 2016)</div></div>
           </Col>
           <Col xs={8} className="detailCol">
             <Row className='expDetails'>
-              <Row className="expHeader"><span className="role">Designation : Contract Assignee</span></Row>
+              <Row className="expHeader"><span className="role">Designation : Contract Assignee</span><span className="cmpname">CMC LTD</span></Row>
+              
               <Row><span className="subtile">Team Size : 2</span></Row>
-              <Row><span className="subtile">Technology Used: SQL</span></Row>
+              <Row><span className="subtile">Technology Used: <div><div className='techdiv'>SQL</div></div></span></Row>
               <Row className="mainDescRow"><Col xs={3}><span className='mainDesc'>Responsibility</span></Col>
                 <Col xs={9}>
                   <ul>

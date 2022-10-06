@@ -126,10 +126,17 @@ body
 {
   padding: 2% !important;
 }
+.subtile>div{
+ 
+    padding: 2%;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
 .expHeader
 {
   backface-visibility: visible !important;
-  background: linear-gradient(110.3deg, rgb(13, 13, 12) 8.7%, rgb(231, 217, 214) 47.5%, rgb(235, 229, 230) 89.1%) !important;
+  background: linear-gradient(110.3deg, rgb(13, 13, 12) 8.7%, rgb(112, 81, 74) 47.5%, rgb(235, 229, 230) 89.1%) !important;
     border-top-left-radius: 23px !important;
     /* width: 803px; */
     margin-left: 0% !important;
@@ -147,11 +154,73 @@ body
     width: 100% !important;
     height:100% !important;
 }
+
+/*---Pointer----*/
+.expDetails::before {
+  content: "" !important;
+  width: 0px !important;
+  height: 0px !important;
+  border: 0.8em solid transparent !important;
+  position: absolute  !important;
+}
+
+.expDetails.left::before {
+   left: 7% !important;
+  right: -70px !important;
+  top: 10% !important;
+  border-left: 10px solid #444 !important;
+}
+
+
+
+
+.expDetails.top::before {
+ border-right: 11px solid #444 !important;
+ bottom: 10px !important;
+ left: -20px !important;
+}
+
+.expDetails.bottom::before {
+  left: 45% !important;
+  top: -20px !important;
+  border-bottom: 10px solid #444 !important;
+}
+
+
+.expDetails.right::before {
+  
+  top: 40% !important;
+  border-right: 10px solid #444 !important;
+}
+
+.expDetails.top-left::before {
+  /*left: 7px;*/
+  bottom: -20px !important;
+  border-top: 10px solid #444 !important;
+}
+
+.expDetails.top-right::before {
+  /*right: 7px;*/
+  bottom: -20px !important;
+  border-top: 10px solid #444 !important;
+}
+.imgCmp
+{
+  width: 43%;
+    
+}
+.cmpname
+{
+  font-size: small;
+    font-style: italic;
+    color: blue;
+}
 .role 
 {
   color: white !important;
     font-style: oblique !important;
-    padding: 2% !important;
+    padding-left: 2% !important;
+    padding-top: 2%!important;
     font-weight: 100 !important;
     font-size: small !important;
 }
@@ -172,7 +241,7 @@ body
 .mainDescRow
 {
   margin-top:2% !important;
-  padding-bottom: 4% !important;
+  padding-bottom: 10% !important;
 }
 .subtile
 {
@@ -271,6 +340,22 @@ body
 {
   height: 516px !important;
     margin-bottom: 5% !important;
+}
+.techdiv
+{
+  
+    background-color: lightgoldenrodyellow;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: black;
+    margin-top: 2%;
+    /* border-radius: 0px; */
+    margin-left: 3%;
+    /* height: 42%; */
+    border-radius: 20%;
+    max-width: 77px;
+    font-size: 12px;
+    align-content: space-around;
 }
 .certificationCol
 {
