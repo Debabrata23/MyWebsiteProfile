@@ -100,7 +100,7 @@ const Certifications = (props) => {
     <ScrollAnimation animateIn='animate__bounceInRight'><Row className="pageheader"><span className="pageheaderspan">CERTIFICATION & SKILLS</span></Row></ScrollAnimation>
    
     <Row className="certificatediv">
-      <Col lg={true} className="maindivSkill">
+      <Col lg={true} className="maindivSkillMob">
       <ScrollAnimation animateIn='animate__bounceInRight'>
         <Row className="divSkill">
             <Row className="skillHeader">Skills</Row>
@@ -131,12 +131,12 @@ const Certifications = (props) => {
       <Col lg={true} className="certificationCol">
       <ScrollAnimation animateIn='animate__fadeIn'>
         <Row>
-           <div><img className="imgCert" src={require('../../images/CERT-Fundamentals-Power-Platform.png')}/><span className="certTiltle">Microsoft Certified Power Platform Fundamental</span></div>
-           <Button className="certbutton" onClick={()=>clickDownloadCert()} variant="outline-info"><DownloadRoundedIcon/>PL 900</Button>
+           <div><img className="imgCertMob" src={require('../../images/CERT-Fundamentals-Power-Platform.png')}/><span className="certTiltle">Microsoft Certified Power Platform Fundamental</span></div>
+           <Button className="certbuttonMob" onClick={()=>clickDownloadCert()} variant="outline-info"><DownloadRoundedIcon/>PL 900</Button>
         </Row>
         <Row>
-           <div><img className="imgCert" src={require('../../images/power-platform-developer-600x600.png')}/><span className="certTiltle">Microsoft Certified Power Platform Developer</span></div>
-           <Button className="certbutton" onClick={()=>clickDownloadCert400()} variant="outline-info"><DownloadRoundedIcon/>PL 400</Button>
+           <div><img className="imgCertMob" src={require('../../images/power-platform-developer-600x600.png')}/><span className="certTiltle">Microsoft Certified Power Platform Developer</span></div>
+           <Button className="certbuttonMob" onClick={()=>clickDownloadCert400()} variant="outline-info"><DownloadRoundedIcon/>PL 400</Button>
         </Row>
         </ScrollAnimation>
       </Col>
