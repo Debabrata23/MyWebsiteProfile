@@ -104,7 +104,7 @@ const Certifications = (props) => {
       <Col lg={true} className="maindivSkillMob">
       <ScrollAnimation animateIn='animate__fadeIn'>
         <Row className="divSkillMobile">
-            <Row className="skillHeader"><Col lg={true}><div className='seperatorSub'></div></Col><Col lg={true}><div>Skills</div></Col></Row>
+            <Row className="skillHeader"><Col lg={true} className='seperatorSubMob'><div>Skills</div></Col></Row>
            <Row>
            <Col lg={true}><div className='imageskill'><img  className="imgdata" alt="#" src={require('../../images/ms-share-point.png')}/>  <ProgressBar now={80} variant="spol" animated label={`${80}%`}/></div></Col>
            <Col lg={true}><div className='imageskill'><img  className="imgdata" alt="#" src={require('../../images/microsoft-sharepoint-2019.png')}/> <ProgressBar now={70} variant="spop" animated label={`${70}%`}/></div></Col>
@@ -130,7 +130,7 @@ const Certifications = (props) => {
       </Col>
       <Col lg={true} className="certificationCol">
       <ScrollAnimation animateIn='animate__fadeIn'>
-      <Row className="skillHeader"><Col lg={true}><div className='seperatorSub'></div></Col><Col lg={true}><div>Skills</div></Col></Row>
+      <Row className="skillHeader"><Col lg={true} className='seperatorSubMob'><div>Certification</div></Col></Row>
         <Row>
            <div><img className="imgCertMob" src={require('../../images/CERT-Fundamentals-Power-Platform.png')}/><span className="certTiltle">Microsoft Certified Power Platform Fundamental</span></div>
            <Button className="certbuttonMob" onClick={()=>clickDownloadCert()} variant="outline-info"><DownloadRoundedIcon/>PL 900</Button>
