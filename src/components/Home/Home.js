@@ -54,7 +54,7 @@ const Home = () => {
     <Container className="mainContainer">
     <BrowserView><TopNavigation/></BrowserView>
    <MobileView><Hamburger/></MobileView>
-    
+    <BrowserView>
     <div className='navigateHome'>
    
     <Row className='maininfo'>
@@ -66,7 +66,7 @@ const Home = () => {
          <Row><span className='headerTxt'>Debabrata Saha</span></Row>
          <Row><strong><span className='abtmetxt'>About me</span></strong></Row>
          <Row><div className='descriptionHeader'>A Microsoft Professional with 6.4 years of experience in Microsoft Technology.Worked in SharePoint 2013 and SharePoint Online.Involved in end to end development of  portal using SPFX and React.</div></Row>
-         <Row><BrowserView><Button className="downResume" onClick={()=>clickdownload()}variant="outline-info">Download CV</Button></BrowserView><MobileView><Button className="downResumeMobile" onClick={()=>clickdownload()}variant="outline-info">Download CV</Button></MobileView></Row>
+         <Row><BrowserView><Button className="downResume" onClick={()=>clickdownload()}variant="outline-info">Download CV</Button></BrowserView></Row>
          <Row><Col lg={true}>
          <Row><strong><span className='abtmetxt'>Contact me</span></strong></Row>
          <Row><span className='abtmeinfo'><PhoneInTalkRoundedIcon/> :9874345299</span></Row>
@@ -82,6 +82,35 @@ const Home = () => {
     </Row>
    
     </div>
+    </BrowserView>
+    <MobileView> <div className='navigateHomeMobile'>
+   
+    <Row className='maininfo'>
+    <Col lg={true} className='imgprofile'>
+      
+    <div class="myimage"><img src={require('../../images/Deb.jpg')} alt="#"/></div>
+ </Col>
+      <Col lg={true} className="descriptionHome">
+         <Row><span className='headerTxt'>Debabrata Saha</span></Row>
+         <Row><strong><span className='abtmetxt'>About me</span></strong></Row>
+         <Row><div className='descriptionHeader'>A Microsoft Professional with 6.4 years of experience in Microsoft Technology.Worked in SharePoint 2013 and SharePoint Online.Involved in end to end development of  portal using SPFX and React.</div></Row>
+         <Row><MobileView><Button className="downResumeMobile" onClick={()=>clickdownload()}variant="outline-info">Download CV</Button></MobileView></Row>
+         <Row><Col lg={true}>
+         <Row><strong><span className='abtmetxt'>Contact me</span></strong></Row>
+         <Row><span className='abtmeinfo'><PhoneInTalkRoundedIcon/> :9874345299</span></Row>
+         <Row><span className='abtmeinfo'><MailOutlineRoundedIcon/><a href = "mailto: debabrata18992@gmail.com"> :debabrata18992@gmail.com</a></span></Row>
+         <Row><span className='abtmeinfo'><LinkedInIcon color='blue' onClick={()=>redirectLink()}/> : LinkedIn</span></Row>
+      
+         </Col></Row>
+      </Col>
+    
+      
+      
+     
+    </Row>
+   
+    </div></MobileView>
+   
     <Certifications clickCert={clickCert}/>
     <WorkExperience/>
     

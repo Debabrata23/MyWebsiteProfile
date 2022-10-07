@@ -35,15 +35,37 @@ body
   margin-inline: 11% !important;
     padding: 4% !important;
 }
+.navigatecertificateMobile
+{
+  background-image: linear-gradient(110.3deg,#031603 ,#231362  );
+  margin-top:4%;
+  width:456px;
+}
 .navigatecertificate
 {
   background-image: linear-gradient(110.3deg,#031603 ,#231362  );
   margin-top:4%
 }
+.navigateHomeMobile
+{
+  background-image: linear-gradient(110.3deg,#031603 ,#231362 );
+  margin-top:5%;
+  width:456px;
+}
 .navigateHome
 {
   background-image: linear-gradient(110.3deg,#031603 ,#231362 );
   margin-top:5%
+}
+.workexpdivMobile
+{
+  background: linear-gradient(110.3deg,#031603 ,#231362  );
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-top: 4% !important;
+  width: 456px !important;
 }
 .workexpdiv
 {
