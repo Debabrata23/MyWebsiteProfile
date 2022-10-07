@@ -113,6 +113,15 @@ body {
   margin-left: 2% !important;
   padding: 1% !important;
 }
+.seperatorSub
+{
+  background-color: yellow;
+    width: 42% !important;
+    height: 3px;
+    margin-left: 64%;
+    padding: 0%;
+    margin-top: 4%;
+}
 .seperator
 {
   background-color: yellow;
