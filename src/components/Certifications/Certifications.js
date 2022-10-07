@@ -82,6 +82,7 @@ const Certifications = (props) => {
       
       <Col lg={true} className="certificationCol">
       <ScrollAnimation animateIn='animate__fadeIn'>
+      <Row className="skillHeader">Ceritifications</Row>
         <Row>
            <div><img className="imgCert" src={require('../../images/CERT-Fundamentals-Power-Platform.png')}/><span className="certTiltle">Microsoft Certified Power Platform Fundamental</span></div>
            <Button className="certbutton" onClick={()=>clickDownloadCert()} variant="outline-info"><DownloadRoundedIcon/>PL 900</Button>
