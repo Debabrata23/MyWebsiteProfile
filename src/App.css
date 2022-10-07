@@ -81,7 +81,7 @@ body {
 .headerDivMobile {
   animation: 1s ease-out 0s 1 slideInLeft !important;
   /* margin-left: 15% !important; */
-  width: 25% !important;
+  width: 50% !important;
   margin-top: 3%;
   background-color: black;
   height: 164px;
