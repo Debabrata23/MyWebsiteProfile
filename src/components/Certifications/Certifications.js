@@ -55,23 +55,24 @@ const Certifications = (props) => {
         <Row className="divSkill">
             <Row className="skillHeader">Skills</Row>
            <Row>
-           <Col lg={true}><div className='imageskill'><img  className="imgdata" alt="#" src={require('../../images/ms-share-point.png')}/>  <ProgressBar now={80} variant="info" animated label={`${80}%`}/></div></Col>
-           <Col lg={true}><div className='imageskill'><img  className="imgdata" alt="#" src={require('../../images/microsoft-sharepoint-2019.png')}/> <ProgressBar now={70} variant="info" animated label={`${70}%`}/></div></Col>
+           <Col lg={true}><div className='imageskill'><img  className="imgdata" alt="#" src={require('../../images/ms-share-point.png')}/>  <ProgressBar now={80} variant="spol" animated label={`${80}%`}/></div></Col>
+           <Col lg={true}><div className='imageskill'><img  className="imgdata" alt="#" src={require('../../images/microsoft-sharepoint-2019.png')}/> <ProgressBar now={70} variant="spop" animated label={`${70}%`}/></div></Col>
            </Row>
            <Row>
-           <Col lg={true}><div className='imageskill'><img  className="imgdata" alt="#" src={require('../../images/JS.png')}/>  <ProgressBar now={80} variant="info" animated label={`${80}%`}/></div></Col>
-           <Col lg={true}><div className='imageskill'><img  className="imgdata" alt="#" src={require('../../images/react-native.png')}/> <ProgressBar variant="info" animated now={80} label={`${80}%`}/></div></Col>
+           <Col lg={true}><div className='imageskill'><img  className="imgdata" alt="#" src={require('../../images/JS.png')}/>  <ProgressBar now={80} variant="jsinfo" animated label={`${80}%`}/></div></Col>
+           <Col lg={true}><div className='imageskill'><img  className="imgdata" alt="#" src={require('../../images/react-native.png')}/> <ProgressBar variant="reactinfo" animated now={80} label={`${80}%`}/></div></Col>
+           </Row>
+           
+           <Row>
+           <Col lg={true}><div className='imageskill'><img  className="imgdata" alt="#" src={require('../../images/microsoft-power-apps-2020.png')}/>  <ProgressBar variant="powerappsinfo" animated now={85} label={`${85}%`}/></div></Col>
+           <Col lg={true}><div className='imageskill'><img  className="imgdata" alt="#" src={require('../../images/microsoft-power-automate-2020.png')}/> <ProgressBar variant="powerautomateinfo" animated now={80} label={`${80}%`}/></div></Col>
            </Row>
            <Row>
-           <Col lg={true}><div className='imageskill'><img  className="imgdata" alt="#" src={require('../../images/jquery.png')}/> <ProgressBar variant="info" animated now={70} label={`${70}%`}/></div></Col>
+           <Col lg={true}><div className='imageskill'><img  className="imgdata" alt="#" src={require('../../images/api-settings.png')}/>  <ProgressBar variant="restapiinfo" animated now={75} label={`${75}%`}/></div></Col>
+           <Col lg={true}><div className='imageskill'><img  className="imgdata" alt="#" src={require('../../images/typescript.png')}/> <ProgressBar variant="typescriptinfo" animated now={70} label={`${70}%`}/></div></Col>
            </Row>
            <Row>
-           <Col lg={true}><div className='imageskill'><img  className="imgdata" alt="#" src={require('../../images/microsoft-power-apps-2020.png')}/>  <ProgressBar variant="info" animated now={85} label={`${85}%`}/></div></Col>
-           <Col lg={true}><div className='imageskill'><img  className="imgdata" alt="#" src={require('../../images/microsoft-power-automate-2020.png')}/> <ProgressBar variant="info" animated now={80} label={`${80}%`}/></div></Col>
-           </Row>
-           <Row>
-           <Col lg={true}><div className='imageskill'><img  className="imgdata" alt="#" src={require('../../images/api-settings.png')}/>  <ProgressBar variant="info" animated now={75} label={`${75}%`}/></div></Col>
-           <Col lg={true}><div className='imageskill'><img  className="imgdata" alt="#" src={require('../../images/typescript.png')}/> <ProgressBar variant="info" animated now={70} label={`${70}%`}/></div></Col>
+           <Col lg={true}><div className='imageskill'><img  className="imgdata" alt="#" src={require('../../images/jquery.jpg')}/> <ProgressBar variant="jqueryinfo" animated now={70} label={`${70}%`}/></div></Col>
            </Row>
         </Row>
         </ScrollAnimation>

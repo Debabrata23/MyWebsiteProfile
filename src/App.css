@@ -43,7 +43,7 @@ body
 .navigateHome
 {
   background-image: linear-gradient(110.3deg,#031603 ,#231362 );
-  margin-top:10%
+  margin-top:5%
 }
 .workexpdiv
 {
@@ -114,9 +114,9 @@ body
     font-size: 78%;
    
     margin-top: 2%;
-    margin-left: 21%;
+    
     word-break: break-all;
-    width: 54% !important;
+    width: 100% !important;
 }
 
 /*------Animation------*/
@@ -274,14 +274,14 @@ body
 }
 .abtmeinfo
 {
-  margin-left:21%;
+  margin-left:17%;
   font-family:serif;
   
     font-size: medium;
 }
 .abtmetxt
 {
-  margin-left: 22%;
+  margin-left: 1%;
   color: yellow;
     font-weight: 300;
     font-style: oblique;
@@ -309,7 +309,7 @@ body
 .navRow {
   
   background: url('./images/black-radial-gradient-6b237e4d.jpg') !important;
-  padding: 20px !important;
+ 
 }
 
 .mainContainer {
@@ -329,11 +329,49 @@ body
 {
   padding: 1% !important;
 }
-.imageskill
+.progress
 {
   width: 100% !important;
+}
+.bg-spol
+{
+  background-color: green !important;
+  
+}
+.bg-jsinfo
+{
+  background-color: rgb(255, 219, 88) !important;
+}
+.bg-jqueryinfo
+{
+  background-color: brown !important;
+}
+.bg-powerappsinfo
+{
+  background-color: #231362 !important;
+}
+.bg-typescriptinfo
+{
+  background-color: rgb(255, 219, 88) !important;
+}
+.bg-restapiinfo
+{
+  background-color: #444 !important;
+}
+.bg-powerautomateinfo
+{
+  background-color: #231362 !important;
+}
+.bg-reactinfo
+{
+  background-color: cyan !important;
+}
+.imageskill
+{
+  display: flex !important;
+  width: 100% !important;
   /* border-radius: 31%; */
-  margin-left: 21% !important;
+ 
   padding: 2% !important;
 }
 .certbutton
@@ -427,9 +465,9 @@ body
 }
 .downResume
 {
-  width: 26% !important;
-    margin-top: 3% !important;
-    margin-left: 23% !important;
+  width: 32% !important;
+  margin-top: 3% !important;
+  margin-left: 58% !important;
 }
 .mainContainer
 {
