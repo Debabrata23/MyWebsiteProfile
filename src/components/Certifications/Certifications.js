@@ -49,11 +49,11 @@ const Certifications = (props) => {
     // <TopNavigation></TopNavigation>
     <div>
     <BrowserView><div className="navigatecertificate">
-    <ScrollAnimation animateIn='animate__bounceInRight'><Row className="pageheader"><span className="pageheaderspan">CERTIFICATION & SKILLS</span></Row></ScrollAnimation>
+    <ScrollAnimation animateIn='animate__bounceInRight'><Row className="pageheader"><span className="pageheaderspan">CERTIFICATION & SKILLS</span><div className='seperator'></div></Row></ScrollAnimation>
    
     <Row className="certificatediv">
       <Col lg={true} className="maindivSkill">
-      <ScrollAnimation animateIn='animate__bounceInRight'>
+      <ScrollAnimation animateIn='animate__fadeIn'>
         <Row className="divSkill">
             <Row className="skillHeader">Skills</Row>
            <Row>
@@ -98,11 +98,10 @@ const Certifications = (props) => {
     
     </div></BrowserView>
     <MobileView><div className="navigatecertificateMobile">
-    <ScrollAnimation animateIn='animate__bounceInRight'><Row className="pageheader"><span className="pageheaderspan">CERTIFICATION & SKILLS</span></Row></ScrollAnimation>
-   
+    <ScrollAnimation animateIn='animate__bounceInRight'><Row className="pageheader"><span className="pageheaderspan">CERTIFICATION & SKILLS</span><div className='seperator'></div></Row></ScrollAnimation>
     <Row className="certificatediv">
       <Col lg={true} className="maindivSkillMob">
-      <ScrollAnimation animateIn='animate__bounceInRight'>
+      <ScrollAnimation animateIn='animate__fadeIn'>
         <Row className="divSkill">
             <Row className="skillHeader">Skills</Row>
            <Row>
@@ -131,6 +130,7 @@ const Certifications = (props) => {
       
       <Col lg={true} className="certificationCol">
       <ScrollAnimation animateIn='animate__fadeIn'>
+      <Row className="skillHeader">Ceritifications</Row>
         <Row>
            <div><img className="imgCertMob" src={require('../../images/CERT-Fundamentals-Power-Platform.png')}/><span className="certTiltle">Microsoft Certified Power Platform Fundamental</span></div>
            <Button className="certbuttonMob" onClick={()=>clickDownloadCert()} variant="outline-info"><DownloadRoundedIcon/>PL 900</Button>

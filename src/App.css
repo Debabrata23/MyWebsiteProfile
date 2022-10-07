@@ -111,13 +111,22 @@ body {
 
 .pageheaderspan {
   margin-left: 2% !important;
-}
-
-.pageheader {
-  border-bottom: ridge !important;
   padding: 1% !important;
-  background: linear-gradient(rgb(24, 20, 20), rgb(100, 58, 58));
-  border-radius: 71px;
+}
+.seperator
+{
+  background-color: yellow;
+    
+    width: 95% !important;
+    height: 3px;
+    margin-left: 2%;
+    padding: 0%;
+}
+.pageheader {
+  /* border-bottom: ridge !important; */
+  padding: 1% !important;
+  /* background: linear-gradient(rgb(24, 20, 20), rgb(100, 58, 58));
+  border-radius: 71px; */
 }
 
 .navRow {

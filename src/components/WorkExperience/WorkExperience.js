@@ -19,7 +19,7 @@ const WorkExperience = () => {
     <div>
     <BrowserView> 
     <div className='workexpdiv'>
-    <Row className="pageheader"><ScrollAnimation animateIn='animate__fadeIn'><span className="pageheaderspan">WORK EXPERIENCE</span></ScrollAnimation></Row>
+    <ScrollAnimation animateIn='animate__bounceInRight'><Row className="pageheader"><span className="pageheaderspan">WORK EXPERIENCE</span><div className='seperator'></div></Row></ScrollAnimation>
     <ScrollAnimation animateIn="animate__fadeIn" >
       <Row className="workRow">
         <Col lg={true} className="txtCmpheader">
@@ -173,7 +173,7 @@ const WorkExperience = () => {
     </ScrollAnimation>
   </div></BrowserView>
     <MobileView>  <div className='workexpdivMobile'>
-    <Row className="pageheader"><ScrollAnimation animateIn='animate__fadeIn'><span className="pageheaderspan">WORK EXPERIENCE</span></ScrollAnimation></Row>
+    <ScrollAnimation animateIn='animate__bounceInRight'><Row className="pageheader"><span className="pageheaderspan">WORK EXPERIENCE</span><div className='seperator'></div></Row></ScrollAnimation>
     <ScrollAnimation animateIn="animate__fadeIn" >
       <Row className="workRow">
         <Col lg={true} className="txtCmpheader">
