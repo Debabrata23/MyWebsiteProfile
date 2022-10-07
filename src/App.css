@@ -236,7 +236,7 @@ body {
 .expHeader {
   padding: 2% !important;
   backface-visibility: visible !important;
-  background: linear-gradient(110.3deg, rgb(13, 13, 12) 8.7%, rgb(112, 81, 74) 47.5%, rgb(235, 229, 230) 89.1%) !important;
+  background: linear-gradient(110.3deg, rgb(13, 13, 12) 8.7%, rgb(112, 81, 74) 47.5%, rgb(30, 4, 9) 89.1%) !important;
   border-top-left-radius: 23px !important;
   /* width: 803px; */
   margin-left: 0% !important;
