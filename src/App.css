@@ -531,15 +531,13 @@ body {
 .divSkillMobile
 {
   width: 305px !important;
-  margin-top: 12% !important;
+ 
   border-radius: 14px !important;
-  box-shadow: 4px 3px 8px 1px #969696 !important;
 }
 .divSkill {
-  margin-top: 12% !important;
+  
   border-radius: 14px !important;
-  box-shadow: 4px 3px 8px 1px #969696 !important;
-  -webkit-box-shadow: 4px 3px 8px 1px #969696 !important;
+ 
   /* padding: 2%; */
 
 
