@@ -555,12 +555,13 @@ body {
 
 .skillHeader {
   margin-bottom: 4% !important;
-  margin-left: 4% !important;
+  /* margin-left: 4% !important; */
   font-weight: 500 !important;
   color: white !important;
   height: 30% !important;
   text-transform: uppercase !important;
-  background: linear-gradient(110.3deg, rgb(13, 13, 12) 8.7%, rgb(231, 217, 214) 47.5%, rgb(239, 231, 232) 89.1%) !important;
+  /* ;
+  background: linear-gradient(110.3deg, rgb(13, 13, 12) 8.7%, rgb(231, 217, 214) 47.5%, rgb(239, 231, 232) 89.1%) !important; */
   border-radius: 14px !important;
 }
 
