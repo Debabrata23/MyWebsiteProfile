@@ -102,7 +102,7 @@ const Certifications = (props) => {
     <Row className="certificatediv">
       <Col lg={true} className="maindivSkillMob">
       <ScrollAnimation animateIn='animate__fadeIn'>
-        <Row className="divSkill">
+        <Row className="divSkillMobile">
             <Row className="skillHeader">Skills</Row>
            <Row>
            <Col lg={true}><div className='imageskill'><img  className="imgdata" alt="#" src={require('../../images/ms-share-point.png')}/>  <ProgressBar now={80} variant="spol" animated label={`${80}%`}/></div></Col>
@@ -127,7 +127,6 @@ const Certifications = (props) => {
         </Row>
         </ScrollAnimation>
       </Col>
-      
       <Col lg={true} className="certificationCol">
       <ScrollAnimation animateIn='animate__fadeIn'>
       <Row className="skillHeader">Ceritifications</Row>
