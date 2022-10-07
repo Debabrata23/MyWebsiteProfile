@@ -54,6 +54,17 @@ body
   background-size: cover;
   margin-top: 4% !important;
 }
+.headerDivMobile
+{
+  animation: 1s ease-out 0s 1 slideInLeft !important;
+    /* margin-left: 15% !important; */
+    width: 19% !important;
+    margin-top: 3%;
+    background-color: black;
+    height: 164px;
+    position: fixed;
+    opacity: 0.5;
+}
 .headerDiv
 {
   animation: 1s ease-out 0s 1 slideInLeft !important;
@@ -272,6 +283,16 @@ body
   
   
 }
+.imgmobile
+{
+  width: 4%;
+    /* padding: 0%; */
+    margin-top: -1%;
+    color: white;
+    position: fixed;
+    
+
+}
 .abtmeinfo
 {
   margin-left:17%;
@@ -462,6 +483,12 @@ body
     font-weight: 700;
     font-style: italic;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.downResumeMobile
+{
+  width: 24% !important;
+  margin-top: 3% !important;
+  margin-left: 40% !important;
 }
 .downResume
 {

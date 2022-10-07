@@ -13,7 +13,9 @@ import WorkExperience from '../WorkExperience/WorkExperience';
 import Certifications from '../Certifications/Certifications';
 import { useContext } from 'react';
 import userCOntext from '../TopNavigation'
+import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 import  ScrollAnimation  from 'react-animate-on-scroll';
+import Hamburger from '../Hamburger';
 
 const Home = () => {
   
@@ -50,7 +52,9 @@ const Home = () => {
     }
   return (
     <Container className="mainContainer">
-    <TopNavigation/>
+    <BrowserView><TopNavigation/></BrowserView>
+   <MobileView><Hamburger/></MobileView>
+    
     <div className='navigateHome'>
    
     <Row className='maininfo'>
@@ -61,8 +65,8 @@ const Home = () => {
       <Col lg={true} className="descriptionHome">
          <Row><span className='headerTxt'>Debabrata Saha</span></Row>
          <Row><strong><span className='abtmetxt'>About me</span></strong></Row>
-         <Row><div className='descriptionHeader'>A Microsoft Professional with 6.4 years of experience in Microsoft Technology.Worked in SharePoint 2013 and SharePoint Online.Involved in ened to end development of E-Commerce portal using SPFX and React.Also involved in client requirement gathering and managing a team.Developing websites using PowerApps and automate various process using MS Flows and other Dynamic365 technology.Have good knowledge of Azure DevOpps and Agile methodology and Git</div></Row>
-         <Row><Button className="downResume" onClick={()=>clickdownload()}variant="outline-info">Download CV</Button></Row>
+         <Row><div className='descriptionHeader'>A Microsoft Professional with 6.4 years of experience in Microsoft Technology.Worked in SharePoint 2013 and SharePoint Online.Involved in end to end development of  portal using SPFX and React.</div></Row>
+         <Row><BrowserView><Button className="downResume" onClick={()=>clickdownload()}variant="outline-info">Download CV</Button></BrowserView><MobileView><Button className="downResumeMobile" onClick={()=>clickdownload()}variant="outline-info">Download CV</Button></MobileView></Row>
          <Row><Col lg={true}>
          <Row><strong><span className='abtmetxt'>Contact me</span></strong></Row>
          <Row><span className='abtmeinfo'><PhoneInTalkRoundedIcon/> :9874345299</span></Row>
