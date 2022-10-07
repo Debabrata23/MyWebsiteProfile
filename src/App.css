@@ -57,8 +57,8 @@ body
 .headerDiv
 {
   animation: 1s ease-out 0s 1 slideInLeft !important;
-  margin-left: 30% !important;
-  width: 71% !important;
+    margin-left: 15% !important;
+    width: 100% !important;
 }
 .lnkheaderNav
 {
@@ -93,7 +93,10 @@ body
   
 }
 .myimage{
-  width: 76%;
+  width: 100%;
+  margin-inline: 41% !important;
+  /* margin-left: 21%; */
+  margin-top: 46% !important;
     margin-left: 21%;
     margin-top: 19%;
     border-radius: 50%;

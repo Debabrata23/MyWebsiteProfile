@@ -54,7 +54,7 @@ const Home = () => {
     <div className='navigateHome'>
    
     <Row className='maininfo'>
-    <Col lg={true} >
+    <Col lg={true} className='imgprofile'>
       
     <div class="myimage"><img src={require('../../images/Deb.jpg')} alt="#"/></div>
  </Col>
