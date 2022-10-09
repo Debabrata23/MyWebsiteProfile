@@ -122,6 +122,11 @@ body {
     padding: 0%;
     margin-top: 4%;
 }
+.seperatorSubMob
+{
+  background-color: aliceblue !important;
+    border-radius: 13px !important;
+}
 .seperatorSubMob>div
 {
   color:red;
@@ -154,11 +159,11 @@ body {
 
 .myimageMobile {
   width: 100%;
-  justify-content: center;
-  margin-left: 19%;
+  /* justify-content: center; */
+  margin-left: 24%;
   /* margin-inline: 41% !important; */
   /* margin-left: 21%; */
-  margin-top: 46% !important;
+  margin-top: 10% !important;
   /* margin-left: 21%; */
   margin-top: 19%;
   border-radius: 50%;
@@ -190,9 +195,10 @@ body {
   color: antiquewhite;
   font-size: 78%;
   margin-top: 2%;
-  word-break: break-all;
-  width: 96% !important;
-  width: 77% !important;
+  /* word-break: break-all; */
+ 
+  width: 82% !important;
+  padding: 2%;
 }
 
 .descriptionHeader {
@@ -531,7 +537,7 @@ body {
 
 .imgdata {
   width: 18% !important;
-
+  padding: 2% !important;
 }
 
 @keyframes fadeIn {
@@ -546,8 +552,9 @@ body {
 .divSkillMobile
 {
   width: 305px !important;
- 
-  border-radius: 14px !important;
+    border-radius: 14px !important;
+    padding: 5% !important;
+    border: 1px solid !important;
 }
 .divSkill {
   
@@ -574,6 +581,7 @@ body {
   font-weight: 500 !important;
   color: white !important;
   height: 30% !important;
+  padding-bottom: 2% !important;
   text-transform: uppercase !important;
   /* ;
   background: linear-gradient(110.3deg, rgb(13, 13, 12) 8.7%, rgb(231, 217, 214) 47.5%, rgb(239, 231, 232) 89.1%) !important; */
@@ -581,7 +589,7 @@ body {
 }
 
 .headerTxtMobile {
-  padding-top: 6%;
+  
   margin-left: 10%;
   font-size: x-large;
   color: red;

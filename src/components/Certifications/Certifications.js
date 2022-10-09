@@ -127,20 +127,25 @@ const Certifications = (props) => {
            </Row>
         </Row>
         </ScrollAnimation>
-      </Col>
-      <Col lg={true} className="certificationCol">
-      <ScrollAnimation animateIn='animate__fadeIn'>
-      <Row className="skillHeader"><Col lg={true} className='seperatorSubMob'><div>Certification</div></Col></Row>
-        <Row>
-           <div><img className="imgCertMob" src={require('../../images/CERT-Fundamentals-Power-Platform.png')}/><span className="certTiltle">Microsoft Certified Power Platform Fundamental</span></div>
-           <Button className="certbuttonMob" onClick={()=>clickDownloadCert()} variant="outline-info"><DownloadRoundedIcon/>PL 900</Button>
-        </Row>
-        <Row>
-           <div><img className="imgCertMob" src={require('../../images/power-platform-developer-600x600.png')}/><span className="certTiltle">Microsoft Certified Power Platform Developer</span></div>
-           <Button className="certbuttonMob" onClick={()=>clickDownloadCert400()} variant="outline-info"><DownloadRoundedIcon/>PL 400</Button>
+        <ScrollAnimation animateIn='animate__fadeIn'>
+        <Row className="divSkillMobile">
+        <Col lg={true} className="certificationCol">
+        <ScrollAnimation animateIn='animate__fadeIn'>
+        <Row className="skillHeader"><Col lg={true} className='seperatorSubMob'><div>Certification</div></Col></Row>
+          <Row>
+             <div><img className="imgCertMob" src={require('../../images/CERT-Fundamentals-Power-Platform.png')}/><span className="certTiltle">Microsoft Certified Power Platform Fundamental</span></div>
+             <Button className="certbuttonMob" onClick={()=>clickDownloadCert()} variant="outline-info"><DownloadRoundedIcon/>PL 900</Button>
+          </Row>
+          <Row>
+             <div><img className="imgCertMob" src={require('../../images/power-platform-developer-600x600.png')}/><span className="certTiltle">Microsoft Certified Power Platform Developer</span></div>
+             <Button className="certbuttonMob" onClick={()=>clickDownloadCert400()} variant="outline-info"><DownloadRoundedIcon/>PL 400</Button>
+          </Row>
+          </ScrollAnimation>
+        </Col>
         </Row>
         </ScrollAnimation>
       </Col>
+     
       
     </Row>
     

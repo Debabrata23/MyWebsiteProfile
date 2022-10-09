@@ -47,14 +47,12 @@ const Home = () => {
   }
   return (
     <Container className="mainContainer">
-      <BrowserView><TopNavigation /></BrowserView>
-      <MobileView><Hamburger /></MobileView>
+    <BrowserView><TopNavigation /></BrowserView>
+      <BrowserView><Hamburger /></BrowserView>
       <BrowserView>
         <div className='navigateHome'>
-
           <Row className='maininfo'>
             <Col lg={true} className='imgprofile'>
-
               <div class="myimage"><img src={require('../../images/Deb.jpg')} alt="#" /></div>
             </Col>
             <Col lg={true} className="descriptionHome">
@@ -75,29 +73,31 @@ const Home = () => {
 
         </div>
       </BrowserView>
-      <MobileView> <div className='navigateHomeMobile'>
-
+      <MobileView> 
+      <div className='navigateHomeMobile'>
         <Row className='maininfo'>
           <Col lg={true} className='imgprofile'>
 
             <div class="myimageMobile"><img src={require('../../images/Deb.jpg')} alt="#" /></div>
           </Col>
-          <Col lg={true} className="descriptionHome">
-            <Row><span className='headerTxtMobile'>Debabrata Saha</span></Row>
-            <Row><strong><span className='abtmetxt'>About me</span></strong></Row>
-            <Row><div className='descriptionHeaderMobile'>A Microsoft Professional with 6.4 years of experience in Microsoft Technology.Worked in SharePoint 2013 and SharePoint Online.Involved in end to end development of  portal using SPFX and React.</div></Row>
-            <Row><MobileView><Button className="downResumeMobile" onClick={() => clickdownload()} variant="outline-info">Download CV</Button></MobileView></Row>
-            <Row><Col lg={true}>
-              <Row><strong><span className='abtmetxt'>Contact me</span></strong></Row>
-              <Row><span className='abtmeinfoMob'><PhoneInTalkRoundedIcon /> :9874345299</span></Row>
-              <Row><span className='abtmeinfoMob'><MailOutlineRoundedIcon /><a href="mailto: debabrata18992@gmail.com"> :debabrata18992@gmail.com</a></span></Row>
-              <Row><span className='abtmeinfoMob'><LinkedInIcon color='blue' onClick={() => redirectLink()} /> : LinkedIn</span></Row>
-
-            </Col></Row>
-          </Col>
         </Row>
+        <Row className='maininfo'>
+        <Col lg={true} className="descriptionHome">
+          <Row><span className='headerTxtMobile'>Debabrata Saha</span></Row>
+          <Row><strong><span className='abtmetxt'>About me</span></strong></Row>
+          <Row><div className='descriptionHeaderMobile'>A Microsoft Professional with 6.4 years of experience in Microsoft Technology.Worked in SharePoint 2013 and SharePoint Online.Involved in end to end development of  portal using SPFX and React.</div></Row>
+          <Row><MobileView><Button className="downResumeMobile" onClick={() => clickdownload()} variant="outline-info">Download CV</Button></MobileView></Row>
+          <Row><Col lg={true}>
+            <Row><strong><span className='abtmetxt'>Contact me</span></strong></Row>
+            <Row><span className='abtmeinfoMob'><PhoneInTalkRoundedIcon /> :9874345299</span></Row>
+            <Row><span className='abtmeinfoMob'><MailOutlineRoundedIcon /><a href="mailto: debabrata18992@gmail.com"> :debabrata18992@gmail.com</a></span></Row>
+            <Row><span className='abtmeinfoMob'><LinkedInIcon color='blue' onClick={() => redirectLink()} /> : LinkedIn</span></Row>
 
-      </div></MobileView>
+          </Col></Row>
+        </Col></Row>
+
+      </div>
+      </MobileView>
 
       <Certifications clickCert={clickCert} />
       <WorkExperience />
