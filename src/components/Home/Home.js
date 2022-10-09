@@ -48,7 +48,7 @@ const Home = () => {
   return (
     <Container className="mainContainer">
     <BrowserView><TopNavigation /></BrowserView>
-      <BrowserView><Hamburger /></BrowserView>
+      <MobileView><Hamburger /></MobileView>
       <BrowserView>
         <div className='navigateHome'>
           <Row className='maininfo'>
