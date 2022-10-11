@@ -62,6 +62,7 @@ const Home = () => {
               <div class="myimage"><img src={constantfunction.getimagesoure(portfoliojson.basicInfo.profileimg)} alt="#" /></div>
             </Col>
             <Col lg={true} className="descriptionHome">
+            <div className='Infodiv'>
               <Row><span className='headerTxt'>{portfoliojson.basicInfo.candidatename}</span></Row>
               <Row><strong><span className='abtmetxt'>{portfoliojson.basicInfo.titleprofile}</span></strong></Row>
               <Row><div className='descriptionHeader'>{portfoliojson.basicInfo.description}</div></Row>
@@ -73,6 +74,7 @@ const Home = () => {
                 <Row><span className='abtmeinfo'><LinkedInIcon color='blue' onClick={() => redirectLink()} /> : {portfoliojson.basicInfo.linkedin}</span></Row>
 
               </Col></Row>
+              </div>
             </Col>
 
           </Row>
@@ -89,6 +91,7 @@ const Home = () => {
         </Row>
         <Row className='maininfo'>
         <Col lg={true} className="descriptionHome">
+        <div className='Infodiv'>
           <Row><span className='headerTxtMobile'>{portfoliojson.basicInfo.candidatename}</span></Row>
           <Row><strong><span className='abtmetxt'>{portfoliojson.basicInfo.titleprofile}</span></strong></Row>
           <Row><div className='descriptionHeaderMobile'>{portfoliojson.basicInfo.description}</div></Row>
@@ -98,8 +101,9 @@ const Home = () => {
             <Row><span className='abtmeinfoMob'><PhoneInTalkRoundedIcon /> {portfoliojson.basicInfo.phone}</span></Row>
             <Row><span className='abtmeinfoMob'><MailOutlineRoundedIcon /><a href={`mailto:${portfoliojson.basicInfo.mail}`}> : {portfoliojson.basicInfo.mail}</a></span></Row>
             <Row><span className='abtmeinfoMob'><LinkedInIcon color='blue' onClick={() => redirectLink()} /> : {portfoliojson.basicInfo.linkedin}</span></Row>
-
+           
           </Col></Row>
+          </div>
         </Col></Row>
 
       </div>

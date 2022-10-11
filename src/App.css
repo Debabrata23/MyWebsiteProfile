@@ -21,7 +21,7 @@
 
 /*--------------Custom UI-----------------*/
 html {
-  background: url('./images/black1.jpg') no-repeat center center;
+  background: url('./images/backgroundimg.jpeg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -38,44 +38,57 @@ body {
 }
 
 .navigatecertificateMobile {
-  background-image: linear-gradient(110.3deg, #031603, #231362);
+  /* background-image: linear-gradient(110.3deg, #031603, #231362); */
   margin-top: 4%;
+  border:2px solid;
   
 }
 
 .navigatecertificate {
-  background-image: linear-gradient(110.3deg, #031603, #231362);
-  margin-top: 4%
+  /* background-image: linear-gradient(110.3deg, #031603, #231362); */
+  margin-top: 4%;
+  border:2px solid;
 }
 
 .navigateHomeMobile {
-  background-image: linear-gradient(110.3deg, #031603, #231362);
+  /* background-image: linear-gradient(110.3deg, #031603, #231362); */
   margin-top: 5%;
+  background-image: url('./images/background.gif');
   
 }
-
+.Infodiv
+{
+  width: 100%;
+    /* height: 50%; */
+    /* margin-inline: 2%; */
+    padding: 4%;
+    background-color: black;
+}
 .navigateHome {
-  background-image: linear-gradient(110.3deg, #031603, #231362);
+  background-image: url('./images/background.gif');
+  /* background-image: linear-gradient(110.3deg, #031603, #231362); */
   margin-top: 5%
 }
 
 .workexpdivMobile {
-  background: linear-gradient(110.3deg, #031603, #231362);
+  /* background: linear-gradient(110.3deg, #031603, #231362); */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   margin-top: 4% !important;
+  border: 2px solid !important;
   
 }
 
 .workexpdiv {
-  background: linear-gradient(110.3deg, #031603, #231362);
+  /* background: linear-gradient(110.3deg, #031603, #231362); */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   margin-top: 4% !important;
+  border: 2px solid !important; 
 }
 
 .headerDivMobile {
@@ -312,7 +325,7 @@ body {
 }
 
 .imgCmp {
-  width: 25%;
+  width: 42%;
 
 }
 
@@ -512,6 +525,7 @@ body {
 
   margin-bottom: 5% !important;
   padding: 4% !important;
+ 
 }
 
 .techdiv {
@@ -627,7 +641,7 @@ body {
 .mainContainer {
   padding-top: 2% !important;
   /*background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);*/
-  background: url('./images/black1.jpg');
+  background: url('./images/backgroundimg.jpeg');
   height: 100% !important;
   background-size: cover !important;
   color: #282c34;

@@ -27,7 +27,7 @@ const WorkExperience = (props) => {
               {props.data.info.map((exp, index) => {
                 return (
                   <Row className="workRow">
-                    <Col lg={true} className="txtCmpheader">
+                    <Col xs={3} className="txtCmpheader">
                       <div className="workHeader"><img className="imgCmp" src={constantfunction.getimagesoure(exp.companyname)} /><div></div></div>
                     </Col>
                     <Col lg={true} className="detailCol">
