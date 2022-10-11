@@ -31,7 +31,10 @@ export function getimagesoure(image)
             imgSrc=require('../../images/typescript.png');
             break;
         case "jquery.jpg":
-            imgSrc=require('../../images/jquery.jpg');
+            imgSrc=require('../../images/jquery.png');
+            break;
+        case "bootstrap":
+            imgSrc=require('../../images/bootstrap.png');
             break;
         case "CERT-Fundamentals-Power-Platform.png":
             imgSrc=require('../../images/CERT-Fundamentals-Power-Platform.png');

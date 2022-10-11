@@ -41,6 +41,7 @@ body {
   /* background-image: linear-gradient(110.3deg, #031603, #231362); */
   margin-top: 4%;
   border:2px solid;
+  background-image: url('./images/grid-waves-lu.jpg') !important;
   
 }
 
@@ -48,12 +49,13 @@ body {
   /* background-image: linear-gradient(110.3deg, #031603, #231362); */
   margin-top: 4%;
   border:2px solid;
+  background-image: url('./images/grid-waves-lu.jpg') !important;
 }
 
 .navigateHomeMobile {
   /* background-image: linear-gradient(110.3deg, #031603, #231362); */
   margin-top: 5%;
-  background-image: url('./images/background.gif');
+  background-image: url('./images/profile.gif');
   
 }
 .Infodiv
@@ -65,7 +67,7 @@ body {
     background-color: black;
 }
 .navigateHome {
-  background-image: url('./images/background.gif');
+  background-image: url('./images/profile.gif');
   /* background-image: linear-gradient(110.3deg, #031603, #231362); */
   margin-top: 5%
 }
@@ -78,6 +80,7 @@ body {
   background-size: cover;
   margin-top: 4% !important;
   border: 2px solid !important;
+  background-image: url('./images/background.gif') !important;
   
 }
 
@@ -89,6 +92,7 @@ body {
   background-size: cover;
   margin-top: 4% !important;
   border: 2px solid !important; 
+  background-image: url('./images/background.gif') !important;
 }
 
 .headerDivMobile {

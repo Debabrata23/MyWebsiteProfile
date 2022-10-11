@@ -64,6 +64,12 @@
                 "img": "jquery.jpg",
                 "label": 75,
                 "variant": "jqueryinfo"
+            },
+            {
+                "name": "Bootstrap",
+                "img": "bootstrap",
+                "label": 50,
+                "variant": "spol"
             }
         ]
     },
