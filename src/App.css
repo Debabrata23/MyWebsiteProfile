@@ -574,7 +574,10 @@ body {
   padding: 2% !important;
   width: 50% !important;
 }
-
+.skillcontainer
+{
+  columns:2 auto !important;
+}
 .skillHeader {
   margin-bottom: 4% !important;
   /* margin-left: 4% !important; */

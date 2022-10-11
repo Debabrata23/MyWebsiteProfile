@@ -1,0 +1,225 @@
+{
+    "basicInfo": {
+        "candidatename": "Debabrata Saha",
+        "profileimg": "Deb.jpg",
+        "titleprofile": "About me",
+        "description": "A Microsoft Professional with 6.4 years of experience in Microsoft Technology.Worked in SharePoint 2013 and SharePoint Online.Involved in end to end development of  portal using SPFX and React.",
+        "titleContact": "Contacts",
+        "phone": ":9874345299",
+        "mail": "debabrata18992@gmail.com",
+        "linkedin": ": LinkedIn"
+    },
+    "skills": {
+        "info": [
+            {
+                "name": "SharePoint Online",
+                "img": "ms-share-point.png",
+                "label": 80,
+                "variant": "spol"
+            },
+            {
+                "name": "SharePoint OnPremises",
+                "img": "microsoft-sharepoint-2019.png",
+                "label": 70,
+                "variant": "spop"
+            },
+            {
+                "name": "Javascript",
+                "img": "JS.png",
+                "label": 80,
+                "variant": "jsinfo"
+            },
+            {
+                "name": "React",
+                "img": "react-native.png",
+                "label": 80,
+                "variant": "reactinfo"
+            },
+            {
+                "name": "PowerApps",
+                "img": "microsoft-power-apps-2020.png",
+                "label": 85,
+                "variant": "powerappsinfo"
+            },
+            {
+                "name": "PowerAutomate",
+                "img": "microsoft-power-automate-2020.png",
+                "label": 80,
+                "variant": "powerautomateinfo"
+            },
+            {
+                "name": "RestApi",
+                "img": "api-settings.png",
+                "label": 75,
+                "variant": "restapiinfo"
+            },
+            {
+                "name": "Typescript",
+                "img": "typescript.png",
+                "label": 80,
+                "variant": "typescriptinfo"
+            },
+            {
+                "name": "Jquery",
+                "img": "jquery.jpg",
+                "label": 75,
+                "variant": "jqueryinfo"
+            }
+        ]
+    },
+    "ceritificate": {
+        "info": [
+            {
+                "certificateimg": "CERT-Fundamentals-Power-Platform.png",
+                "certificatetitlename": "Microsoft Certified Power Platform Fundamental",
+                "certificatelink": "../../pdfs/PL900.pdf",
+                "certificatetitle": "PL 900"
+            },
+            {
+                "certificateimg": "power-platform-developer-600x600.png",
+                "certificatetitlename": "Microsoft Certified Power Platform Developer",
+                "certificatelink": "../../pdfs/PL400.pdf",
+                "certificatetitle": "PL 400"
+            }
+        ]
+    },
+    "experience": {
+        "info": [
+            {
+                "companyname": "LTI",
+                "companylogo": "",
+                "designation": "Specialist Software Engineer",
+                "Period": "(Jan 2022 - Present)",
+                "team": "5",
+                "skillset": [
+                    "SharePoint Online",
+                    "SQL",
+                    "PowerApps",
+                    "Power Automate",
+                    "Rest API"
+                ],
+                "responsibility": [
+                    "Responsible in architechting the application backend in Azure SQL",
+                    "Creating Views and Procedure in Azure SQL for screen in PowerApps",
+                    "Automating the various approval process using MS flow",
+                    "Designing of Canvas PowerApps using Gallery,Component,Combobox and O365 connector",
+                    "Involved in performance tuning of the app and also requirement gathering from client",
+                    "Involved in end to end development of the App",
+                    "Deploying the app to production through CI/CD pipeline"
+                ]
+            },
+            {
+                "companyname": "EY GDS",
+                "companylogo": "",
+                "designation": "Tax Senior",
+                "Period": "(May 2021 - Jan 2022)",
+                "team": "10",
+                "skillset": [
+                    "SharePoint Online",
+                    "SP PNP js",
+                    "SPFX",
+                    "React Js",
+                    "Javascript",
+                    "PowerApps",
+                    "Power Automate",
+                    "Rest API",
+                    "CSOM"
+                ],
+                "responsibility": [
+                    "Responsible in developing the Commercial application for internal client of EY using SPFX",
+                    "Creating Application Customizer for customization in  sharepoint site",
+                    "Automating the various approval process using MS flow",
+                    "Designing of Canvas PowerApps using Gallery,Component,Combobox and O365 connector",
+                    "Involved in performance tuning of the app and also requirement gathering from client",
+                    "Involved in end to end development of the SharePoint Application",
+                    "Deploying the app to production through CI/CD pipeline"
+                ]
+            },
+            {
+                "companyname": "PWC India",
+                "companylogo": "",
+                "designation": "Technology Consultant",
+                "Period": "(Nov 2019 - April 2021)",
+                "team": "5",
+                "skillset": [
+                    "SharePoint Online",
+                    "Fluent UI React",
+                    "Bootstrap",
+                    "PowerApps",
+                    "Power Automate",
+                    "Rest API",
+                    "SPFX",
+                    "React"
+                ],
+                "responsibility": [
+                    "Responsible in development and designing the portal for both desktop and mobile application",
+                    "Automating the process of pdf reading using OCR",
+                    "Automating the process of creating modern Sharepoint pages using sp pnp js and csom",
+                    "Performance tuning of the application",
+                    "Use application customizer for a feature which is avaiable in both cusstom pages and application pages of Sharepoint",
+                    "Deploying the app to production through CI/CD pipeline"
+                ]
+            },
+            {
+                "companyname": "Mindtree Ltd",
+                "companylogo": "",
+                "designation": "Senior Associate Engineer",
+                "Period": "(Feb 2019 - Nov 2019)",
+                "team": "9",
+                "skillset": [
+                    "SharePoint Online",
+                    "SPFx",
+                    "JSOM",
+                    "JQuery",
+                    "React",
+                    "Power Automate",
+                    "Rest API"
+                ],
+                "responsibility": [
+                    "Responsible in suppoting an existing solution developed in SharePoint 2013",
+                    "Involved in module development using asp dot net and ssom",
+                    "Automating various Sharepoint designer workflow to MS Flows",
+                    "Revamping a site using SPFX and React for migration from SP 2013 to SP Online"
+                                    ]
+            },
+            {
+                "companyname": "Acuvate Software Pvt LTD",
+                "companylogo": "",
+                "designation": "Software Engineer",
+                "Period": "(Nov 2016 - Feb 2019)",
+                "team": "18",
+                "skillset": [
+                    "SharePoint Online",
+                    "SharePoint 2013",
+                    "SQL",
+                    "PowerApps",
+                    "Power Automate",
+                    "Rest API"
+                ],
+                "responsibility": [
+                    "Responsible in supporting an existing project for Germany client",
+                    "Gathering requirement from client and also provide end to end overview of the application",
+                    "Automating the various approval process using MS flow for SP Online",
+                    "Worked in script editor and content editor webpart for script deployment",
+                    "Worked in PowerShell"
+                ]
+            },
+            {
+                "companyname": "CMC Ltd(Presntly TCS)",
+                "companylogo": "",
+                "designation": "Contract Assignee",
+                "Period": "(April 2016 - Oct 2016)",
+                "team": "5",
+                "skillset": [
+                    "SQL",
+                    "Stored Procedure",
+                    "Function"
+                ],
+                "responsibility": [
+                    "Responsible in client support and developing procedure",
+                    "Involved in developing the backend database"
+                ]
+            }
+        ]
+    }
+}
