@@ -91,7 +91,7 @@ const Home = () => {
         </Row>
         <Row className='maininfo'>
         <Col lg={true} className="descriptionHome">
-        <div className='Infodiv'>
+        <div className='InfodivMob'>
           <Row><span className='headerTxtMobile'>{portfoliojson.basicInfo.candidatename}</span></Row>
           <Row><strong><span className='abtmetxt'>{portfoliojson.basicInfo.titleprofile}</span></strong></Row>
           <Row><div className='descriptionHeaderMobile'>{portfoliojson.basicInfo.description}</div></Row>

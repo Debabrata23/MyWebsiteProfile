@@ -66,6 +66,14 @@ body {
     padding: 4%;
     background-color: black;
 }
+.InfodivMob
+{
+  width: 80%;
+  /* height: 50%; */
+  /* margin-inline: 2%; */
+  padding: 4%;
+  background-color: black;
+}
 .navigateHome {
   background-image: url('./images/profile.gif');
   /* background-image: linear-gradient(110.3deg, #031603, #231362); */
@@ -210,11 +218,11 @@ body {
 
 .descriptionHeaderMobile {
   color: antiquewhite;
-  font-size: 78%;
+  font-size: 70%;
   margin-top: 2%;
   /* word-break: break-all; */
  
-  width: 82% !important;
+  width: 100% !important;
   padding: 2%;
 }
 
