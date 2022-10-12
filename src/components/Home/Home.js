@@ -63,7 +63,7 @@ const Home = () => {
             </Col>
             <Col lg={true} className="descriptionHome">
             <div className='Infodiv'>
-              <Row><span className='headerTxt'>{portfoliojson.basicInfo.candidatename}</span></Row>
+              <Row ><span className='headerTxt'>{portfoliojson.basicInfo.candidatename}</span></Row>
               <Row><strong><span className='abtmetxt'>{portfoliojson.basicInfo.titleprofile}</span></strong></Row>
               <Row><div className='descriptionHeader'>{portfoliojson.basicInfo.description}</div></Row>
               <Row><BrowserView><Button className="downResume" onClick={() => clickdownload()} variant="outline-info">Download CV</Button></BrowserView></Row>
@@ -92,11 +92,11 @@ const Home = () => {
         <Row className='maininfo'>
         <Col lg={true} className="descriptionHome">
         <div className='InfodivMob'>
-          <Row><span className='headerTxtMobile'>{portfoliojson.basicInfo.candidatename}</span></Row>
-          <Row><strong><span className='abtmetxt'>{portfoliojson.basicInfo.titleprofile}</span></strong></Row>
-          <Row><div className='descriptionHeaderMobile'>{portfoliojson.basicInfo.description}</div></Row>
-          <Row><MobileView><Button className="downResumeMobile" onClick={() => clickdownload()} variant="outline-info">Download CV</Button></MobileView></Row>
-          <Row><Col lg={true}>
+          <Row className="profilediv"><span className='headerTxtMobile'>{portfoliojson.basicInfo.candidatename}</span></Row>
+          <Row className="profilediv"><strong><span className='abtmetxt'>{portfoliojson.basicInfo.titleprofile}</span></strong></Row>
+          <Row className="profilediv"><div className='descriptionHeaderMobile'>{portfoliojson.basicInfo.description}</div></Row>
+          <Row className="profilediv"><MobileView><Button className="downResumeMobile" onClick={() => clickdownload()} variant="outline-info">Download CV</Button></MobileView></Row>
+          <Row className="profilediv"><Col lg={true}>
             <Row><strong><span className='abtmetxt'>{portfoliojson.basicInfo.titleContact}</span></strong></Row>
             <Row><span className='abtmeinfoMob'><PhoneInTalkRoundedIcon /> {portfoliojson.basicInfo.phone}</span></Row>
             <Row><span className='abtmeinfoMob'><MailOutlineRoundedIcon /><a href={`mailto:${portfoliojson.basicInfo.mail}`}> : {portfoliojson.basicInfo.mail}</a></span></Row>
