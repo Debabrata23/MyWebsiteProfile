@@ -55,33 +55,8 @@ const Home = () => {
     <Container className="mainContainer">
     <BrowserView><TopNavigation /></BrowserView>
       <MobileView><Hamburger /></MobileView>
-      <BrowserView>
-        <div className='navigateHome'>
-          <Row className='maininfo'>
-            <Col lg={true} className='imgprofile'>
-              <div class="myimage"><img src={constantfunction.getimagesoure(portfoliojson.basicInfo.profileimg)} alt="#" /></div>
-            </Col>
-            <Col lg={true} className="descriptionHome">
-            <div className='Infodiv'>
-              <Row ><span className='headerTxt'>{portfoliojson.basicInfo.candidatename}</span></Row>
-              <Row><strong><span className='abtmetxt'>{portfoliojson.basicInfo.titleprofile}</span></strong></Row>
-              <Row><div className='descriptionHeader'>{portfoliojson.basicInfo.description}</div></Row>
-              <Row><BrowserView><Button className="downResume" onClick={() => clickdownload()} variant="outline-info">Download CV</Button></BrowserView></Row>
-              <Row><Col lg={true}>
-                <Row><strong><span className='abtmetxt'>{portfoliojson.basicInfo.titleContact}</span></strong></Row>
-                <Row><span className='abtmeinfo'><PhoneInTalkRoundedIcon /> {portfoliojson.basicInfo.phone}</span></Row>
-                <Row><span className='abtmeinfo'><MailOutlineRoundedIcon /><a href={`mailto:${portfoliojson.basicInfo.mail}`}> : {portfoliojson.basicInfo.mail}</a></span></Row>
-                <Row><span className='abtmeinfo'><LinkedInIcon color='blue' onClick={() => redirectLink()} /> : {portfoliojson.basicInfo.linkedin}</span></Row>
-
-              </Col></Row>
-              </div>
-            </Col>
-
-          </Row>
-
-        </div>
-      </BrowserView>
-      <MobileView> 
+   
+      <BrowserView> 
       <div className='navigateHomeMobile'>
         <Row className='maininfo'>
           <Col lg={true} className='imgprofile'>
@@ -107,7 +82,7 @@ const Home = () => {
         </Col></Row>
 
       </div>
-      </MobileView>
+      </BrowserView>
 
       <Certifications data={portfoliojson} />
       <WorkExperience data={portfoliojson.experience}/>
