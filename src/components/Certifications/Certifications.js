@@ -14,8 +14,9 @@ import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detec
 
 const Certifications = (props) => {
   const vd = props;
-  const clickDownloadCert = () => {
-
+  const clickDownloadCert = (title) => {
+  if(title =="PL 900")
+  {
     fetch(PL900).then(response => {
       response.blob().then(blob => {
         // Creating new object of PDF file
@@ -27,10 +28,9 @@ const Certifications = (props) => {
         alink.click();
       })
     })
-
   }
-  const clickDownloadCert400 = () => {
-
+  else 
+  {
     fetch(PL400).then(response => {
       response.blob().then(blob => {
         // Creating new object of PDF file
@@ -43,6 +43,10 @@ const Certifications = (props) => {
       })
     })
   }
+    
+
+  }
+  
 
   return (
     // <Container className="mainContainer">
@@ -75,7 +79,7 @@ const Certifications = (props) => {
                 {props.data.ceritificate.info.map((cert, index) => {
                   return (<Row>
                     <div><img className="imgCert" src={constantfunction.getimagesoure(cert.certificateimg)} /><span className="certTiltle">{cert.certificatetitlename}</span></div>
-                    <Button className="certbutton" onClick={() => clickDownloadCert()} variant="outline-info"><DownloadRoundedIcon />{cert.certificatetitle}</Button>
+                    <Button className="certbutton" onClick={() => clickDownloadCert(cert.certificatetitle)} variant="outline-info"><DownloadRoundedIcon />{cert.certificatetitle}</Button>
                   </Row>)
                 })}
               </Container>
@@ -108,7 +112,7 @@ const Certifications = (props) => {
                       {props.data.ceritificate.info.map((cert, index) => {
                         return (<Row>
                           <div><img className="imgCertMob" src={constantfunction.getimagesoure(cert.certificateimg)} /><span className="certTiltle">{cert.certificatetitlename}</span></div>
-                          <Button className="certbuttonMob" onClick={() => clickDownloadCert()} variant="outline-info"><DownloadRoundedIcon />{cert.certificatetitle}</Button>
+                          <Button className="certbuttonMob" onClick={() => clickDownloadCert(cert.certificatetitle)} variant="outline-info"><DownloadRoundedIcon />{cert.certificatetitle}</Button>
                         </Row>)
                       })}
                     </Container>
