@@ -87,10 +87,7 @@ body {
 
 .workexpdivMobile {
   /* background: linear-gradient(110.3deg, #031603, #231362); */
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  
   margin-top: 4% !important;
   border: 2px solid !important;
   background-image: url('./images/grid-waves-lu.jpg') !important;
@@ -99,10 +96,10 @@ body {
 
 .workexpdiv {
   /* background: linear-gradient(110.3deg, #031603, #231362); */
-  -webkit-background-size: cover;
+  /* -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover; */
   margin-top: 4% !important;
   border: 2px solid !important; 
   background-image: url('./images/grid-waves-lu.jpg') !important;
