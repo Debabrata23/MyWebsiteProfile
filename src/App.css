@@ -55,7 +55,7 @@ body {
 .navigateHomeMobile {
   /* background-image: linear-gradient(110.3deg, #031603, #231362); */
   margin-top: 5%;
-  background-image: url('./images/profile.gif');
+  background-image: url('./images/J4x.gif');
   
 }
 .Infodiv
@@ -80,7 +80,7 @@ body {
   background-color: black;
 }
 .navigateHome {
-  background-image: url('./images/profile.gif');
+  background-image: url('./images/J4x.gif');
   /* background-image: linear-gradient(110.3deg, #031603, #231362); */
   margin-top: 5%
 }
@@ -93,7 +93,7 @@ body {
   background-size: cover;
   margin-top: 4% !important;
   border: 2px solid !important;
-  background-image: url('./images/background.gif') !important;
+  background-image: url('./images/grid-waves-lu.jpg') !important;
   
 }
 
@@ -105,7 +105,7 @@ body {
   background-size: cover;
   margin-top: 4% !important;
   border: 2px solid !important; 
-  background-image: url('./images/background.gif') !important;
+  background-image: url('./images/grid-waves-lu.jpg') !important;
 }
 
 .headerDivMobile {
@@ -520,7 +520,7 @@ body {
 }
 .certbuttonMob
 {
-  width: 32% !important;
+  width: 31% !important;
     margin-left: 58% !important;
 }
 .certbutton {
@@ -547,18 +547,19 @@ body {
 
 .techdiv {
 
-  background-color: lightgoldenrodyellow;
-  padding-left: 2%;
-  padding-right: 2%;
-  color: black;
-  margin-top: 2%;
-  /* border-radius: 0px; */
-  margin-left: 3%;
-  /* height: 42%; */
-  border-radius: 20%;
-  max-width: 77px;
-  font-size: 12px;
-  align-content: space-around;
+  background-color: burlywood;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: black;
+    margin-top: 2%;
+    font-weight: 800;
+    /* border-radius: 0px; */
+    margin-left: 3%;
+    /* height: 42%; */
+    /* border-radius: 20%; */
+    /* max-width: 77px; */
+    font-size: 12px;
+    align-content: space-around;
 }
 
 .certificationCol {
@@ -644,9 +645,9 @@ body {
 }
 
 .downResumeMobile {
-  width: 40% !important;
-    margin-top: 3% !important;
-    margin-left: 38% !important;
+  width: 50% !important;
+  margin-top: 3% !important;
+  margin-left: 32% !important;
 }
 
 .downResume {
