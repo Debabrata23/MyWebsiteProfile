@@ -11,44 +11,42 @@ import PL900 from '../../pdfs/PL900.pdf';
 import PL400 from '../../pdfs/PL400.pdf'
 import ScrollAnimation from 'react-animate-on-scroll';
 import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
-import { CircularProgressbarWithChildren,buildStyles } from 'react-circular-progressbar';
+import { CircularProgressbarWithChildren, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
 const Certifications = (props) => {
   const vd = props;
   const clickDownloadCert = (title) => {
-  if(title =="PL 900")
-  {
-    fetch(PL900).then(response => {
-      response.blob().then(blob => {
-        // Creating new object of PDF file
-        const fileURL = window.URL.createObjectURL(blob);
-        // Setting various property values
-        let alink = document.createElement('a');
-        alink.href = fileURL;
-        alink.download = 'PL900.pdf';
-        alink.click();
+    if (title == "PL 900") {
+      fetch(PL900).then(response => {
+        response.blob().then(blob => {
+          // Creating new object of PDF file
+          const fileURL = window.URL.createObjectURL(blob);
+          // Setting various property values
+          let alink = document.createElement('a');
+          alink.href = fileURL;
+          alink.download = 'PL900.pdf';
+          alink.click();
+        })
       })
-    })
-  }
-  else 
-  {
-    fetch(PL400).then(response => {
-      response.blob().then(blob => {
-        // Creating new object of PDF file
-        const fileURL = window.URL.createObjectURL(blob);
-        // Setting various property values
-        let alink = document.createElement('a');
-        alink.href = fileURL;
-        alink.download = 'PL400.pdf';
-        alink.click();
+    }
+    else {
+      fetch(PL400).then(response => {
+        response.blob().then(blob => {
+          // Creating new object of PDF file
+          const fileURL = window.URL.createObjectURL(blob);
+          // Setting various property values
+          let alink = document.createElement('a');
+          alink.href = fileURL;
+          alink.download = 'PL400.pdf';
+          alink.click();
+        })
       })
-    })
-  }
-    
+    }
+
 
   }
-  
+
 
   return (
     // <Container className="mainContainer">
@@ -102,25 +100,20 @@ const Certifications = (props) => {
             <ScrollAnimation animateIn='animate__fadeIn'>
               <Row className="divSkillMobile">
                 <Row className="skillHeader"><Col lg={true} className='seperatorSubMob'><div>Skills</div></Col></Row>
-                <Container  className=''>
+                <Container className='div-skill-mob'>
                   {props.data.skills.info.map((value, index) => {
-                  
-                      {parseInt(index)%2!=0 ?
-                        (<Row> <Col lg={true}><div style={{ width: '48%', height: '60%' }}><CircularProgressbarWithChildren  className='circprogress' value={value.label} variant={value.variant}  
-                    styles={buildStyles({pathColor: value.pathColor,
-                    textColor: value.textColor ,
-                    padding:'5%',
-                    trailColor: '#d6d6d6',
-                    backgroundColor: '#3e98c7',})} ><div className='imageskill'><img className="imgdata" alt="#" src={constantfunction.getimagesoure(value.img)} /><div style={{ fontSize: 12, marginTop: -5 }}><strong>{`${value.label}%`}</strong></div></div></CircularProgressbarWithChildren></div></Col><Col lg={true}><div className='titleskillmob'>{value.name}</div></Col>
-                    </Row>):
-                    (<Row> <Col lg={true}><div className='titleskillmob'>{value.name}</div></Col><Col lg={true}><div style={{ width: '48%', height: '60%' }}><CircularProgressbarWithChildren  className='circprogress' value={value.label} variant={value.variant}  
-                    styles={buildStyles({pathColor: value.pathColor,
-                    textColor: value.textColor ,
-                    padding:'5%',
-                    trailColor: '#d6d6d6',
-                    backgroundColor: '#3e98c7',})} ><div className='imageskill'><img className="imgdata" alt="#" src={constantfunction.getimagesoure(value.img)} /><div style={{ fontSize: 12, marginTop: -5 }}><strong>{`${value.label}%`}</strong></div></div></CircularProgressbarWithChildren></div></Col>
+
+
+                    return(<Row> <Col lg={true}><div style={{ width: '54%', height: '60%' }}><CircularProgressbarWithChildren className='circprogress' value={value.label} variant={value.variant}
+                      styles={buildStyles({
+                        pathColor: value.pathColor,
+                        textColor: value.textColor,
+                        padding: '5%',
+                        trailColor: '#d6d6d6',
+                        backgroundColor: '#3e98c7',
+                      })} ><div className='imageskill'><img className="imgdata" alt="#" src={constantfunction.getimagesoure(value.img)} /><div style={{ fontSize: 10, marginTop: 3 ,marginLeft:22}}><strong>{`${value.label}%`}</strong></div></div></CircularProgressbarWithChildren></div></Col><Col lg={true}><div className='titleskillmob'>{value.name}</div></Col>
                     </Row>)
-                      }
+
                   })}
                 </Container>
               </Row>
