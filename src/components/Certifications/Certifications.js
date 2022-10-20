@@ -54,62 +54,22 @@ const Certifications = (props) => {
     // <Container className="mainContainer">
     // <TopNavigation></TopNavigation>
     <div>
-      <BrowserView><div className="navigatecertificate">
-        <ScrollAnimation animateIn='animate__bounceInRight'><Row className="pageheader"><span className="pageheaderspan">CERTIFICATION & SKILLS</span><div className='seperator'></div></Row></ScrollAnimation>
-
-        <Row className="certificatediv">
-          <Col lg={true} className="maindivSkill">
-            <ScrollAnimation animateIn='animate__fadeIn'>
-              <Row className="divSkill">
-                <Row className="skillHeader"><Col lg={true}><div className='seperatorSub'></div></Col><Col lg={true}><div>Skills</div></Col></Row>
-                <Container className='skillcontainer'>
-                  {props.data.skills.info.map((value, index) => {
-                    return (<Row> <Col lg={true}><div style={{ width: '48%', height: '60%' }}><CircularProgressbarWithChildren  className='circprogress' value={value.label} variant={value.variant}  
-                    styles={buildStyles({pathColor: value.pathColor,
-                    textColor: value.textColor ,
-                    padding:'5%',
-                    trailColor: '#d6d6d6',
-                    backgroundColor: '#3e98c7',})} ><div className='imageskill'><img className="imgdata" alt="#" src={constantfunction.getimagesoure(value.img)} /><div style={{ fontSize: 12, marginTop: -5 }}><strong>{`${value.label}%`}</strong></div><div className='titleskill'>{value.name}</div></div></CircularProgressbarWithChildren></div></Col>
-                    </Row>)
-
-                  })}
-                </Container>
-
-              </Row>
-            </ScrollAnimation>
-          </Col>
-
-          <Col lg={true} className="certificationCol">
-            <ScrollAnimation animateIn='animate__fadeIn'>
-              <Row className="skillHeader"><Col lg={true}><div className='seperatorSub'></div></Col><Col lg={true}><div>Certification</div></Col></Row>
-              <Container>
-                {props.data.ceritificate.info.map((cert, index) => {
-                  return (<Row>
-                    <div><img className="imgCert" src={constantfunction.getimagesoure(cert.certificateimg)} /><span className="certTiltle">{cert.certificatetitlename}</span></div>
-                    <Button className="certbutton" onClick={() => clickDownloadCert(cert.certificatetitle)} variant="outline-info"><DownloadRoundedIcon />{cert.certificatetitle}</Button>
-                  </Row>)
-                })}
-              </Container>
-            </ScrollAnimation>
-          </Col>
-        </Row>
-
-      </div></BrowserView>
-      <MobileView><div className="navigatecertificateMobile">
+    
+      <BrowserView><div className="navigatecertificateMobile">
         <ScrollAnimation animateIn='animate__bounceInRight'><Row className="pageheader"><span className="pageheaderspan">CERTIFICATION & SKILLS</span><div className='seperator'></div></Row></ScrollAnimation>
         <Row className="certificatediv">
           <Col lg={true} className="maindivSkillMob">
             <ScrollAnimation animateIn='animate__fadeIn'>
               <Row className="divSkillMobile">
                 <Row className="skillHeader"><Col lg={true} className='seperatorSubMob'><div>Skills</div></Col></Row>
-                <Container  className='skillcontainer'>
+                <Container  className=''>
                   {props.data.skills.info.map((value, index) => {
                     return (<Row> <Col lg={true}><div style={{ width: '48%', height: '60%' }}><CircularProgressbarWithChildren  className='circprogress' value={value.label} variant={value.variant}  
                     styles={buildStyles({pathColor: value.pathColor,
                     textColor: value.textColor ,
                     padding:'5%',
                     trailColor: '#d6d6d6',
-                    backgroundColor: '#3e98c7',})} ><div className='imageskill'><img className="imgdata" alt="#" src={constantfunction.getimagesoure(value.img)} /><div style={{ fontSize: 12, marginTop: -5 }}><strong>{`${value.label}%`}</strong></div><div className='titleskill'>{value.name}</div></div></CircularProgressbarWithChildren></div></Col>
+                    backgroundColor: '#3e98c7',})} ><div className='imageskill'><img className="imgdata" alt="#" src={constantfunction.getimagesoure(value.img)} /><div style={{ fontSize: 12, marginTop: -5 }}><strong>{`${value.label}%`}</strong></div></div></CircularProgressbarWithChildren><div className='titleskillmob'>{value.name}</div></div></Col>
                     </Row>)
                   })}
                 </Container>
@@ -137,7 +97,7 @@ const Certifications = (props) => {
 
         </Row>
 
-      </div></MobileView>
+      </div></BrowserView>
     </div>
 
     // </Container>
