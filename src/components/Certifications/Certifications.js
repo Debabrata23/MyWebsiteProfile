@@ -104,13 +104,23 @@ const Certifications = (props) => {
                 <Row className="skillHeader"><Col lg={true} className='seperatorSubMob'><div>Skills</div></Col></Row>
                 <Container  className=''>
                   {props.data.skills.info.map((value, index) => {
-                    return (<Row> <Col lg={true}><div style={{ width: '48%', height: '60%' }}><CircularProgressbarWithChildren  className='circprogress' value={value.label} variant={value.variant}  
+                  
+                      {parseInt(index)%2!=0?
+                        <Row> <Col lg={true}><div style={{ width: '48%', height: '60%' }}><CircularProgressbarWithChildren  className='circprogress' value={value.label} variant={value.variant}  
                     styles={buildStyles({pathColor: value.pathColor,
                     textColor: value.textColor ,
                     padding:'5%',
                     trailColor: '#d6d6d6',
-                    backgroundColor: '#3e98c7',})} ><div className='imageskill'><img className="imgdata" alt="#" src={constantfunction.getimagesoure(value.img)} /><div style={{ fontSize: 12, marginTop: -5 }}><strong>{`${value.label}%`}</strong></div></div></CircularProgressbarWithChildren><div className='titleskillmob'>{value.name}</div></div></Col>
-                    </Row>)
+                    backgroundColor: '#3e98c7',})} ><div className='imageskill'><img className="imgdata" alt="#" src={constantfunction.getimagesoure(value.img)} /><div style={{ fontSize: 12, marginTop: -5 }}><strong>{`${value.label}%`}</strong></div></div></CircularProgressbarWithChildren></div></Col><Col lg={true}><div className='titleskillmob'>{value.name}</div></Col>
+                    </Row>:
+                    <Row> <Col lg={true}><div className='titleskillmob'>{value.name}</div></Col><Col lg={true}><div style={{ width: '48%', height: '60%' }}><CircularProgressbarWithChildren  className='circprogress' value={value.label} variant={value.variant}  
+                    styles={buildStyles({pathColor: value.pathColor,
+                    textColor: value.textColor ,
+                    padding:'5%',
+                    trailColor: '#d6d6d6',
+                    backgroundColor: '#3e98c7',})} ><div className='imageskill'><img className="imgdata" alt="#" src={constantfunction.getimagesoure(value.img)} /><div style={{ fontSize: 12, marginTop: -5 }}><strong>{`${value.label}%`}</strong></div></div></CircularProgressbarWithChildren></div></Col>
+                    </Row>
+                      }
                   })}
                 </Container>
               </Row>
