@@ -102,7 +102,7 @@ const Certifications = (props) => {
             <ScrollAnimation animateIn='animate__fadeIn'>
               <Row className="divSkillMobile">
                 <Row className="skillHeader"><Col lg={true} className='seperatorSubMob'><div>Skills</div></Col></Row>
-                <Container>
+                <Container  className='skillcontainer'>
                   {props.data.skills.info.map((value, index) => {
                     return (<Row> <Col lg={true}><div style={{ width: '48%', height: '60%' }}><CircularProgressbarWithChildren  className='circprogress' value={value.label} variant={value.variant}  
                     styles={buildStyles({pathColor: value.pathColor,
