@@ -15,61 +15,82 @@
                 "name": "SharePoint Online",
                 "img": "ms-share-point.png",
                 "label": 80,
-                "variant": "spol"
+                "variant": "spol",
+                "pathColor": "green",
+                  "textColor": "#f88"
+    
             },
             {
                 "name": "SharePoint OnPremises",
                 "img": "microsoft-sharepoint-2019.png",
                 "label": 70,
-                "variant": "spop"
+                "variant": "spop",
+                "pathColor": "blue",
+                "textColor": "#f88"
             },
             {
                 "name": "Javascript",
                 "img": "JS.png",
                 "label": 80,
-                "variant": "jsinfo"
+                "variant": "jsinfo",
+                "pathColor": "yellow",
+                "textColor": "#f88"
             },
             {
                 "name": "React",
                 "img": "react-native.png",
                 "label": 80,
-                "variant": "reactinfo"
+                "variant": "reactinfo",
+                "pathColor": "red",
+                "textColor": "#f88"
             },
             {
                 "name": "PowerApps",
                 "img": "microsoft-power-apps-2020.png",
                 "label": 85,
-                "variant": "powerappsinfo"
+                "variant": "powerappsinfo",
+                "pathColor": "violet",
+                "textColor": "#f88"
             },
             {
                 "name": "PowerAutomate",
                 "img": "microsoft-power-automate-2020.png",
                 "label": 80,
-                "variant": "powerautomateinfo"
+                "variant": "powerautomateinfo",
+                "pathColor": "cyan",
+                "textColor": "#f88"
             },
             {
                 "name": "RestApi",
                 "img": "api-settings.png",
                 "label": 75,
-                "variant": "restapiinfo"
+                "variant": "restapiinfo",
+                "pathColor": "grey",
+                "textColor": "#f88"
             },
             {
                 "name": "Typescript",
                 "img": "typescript.png",
                 "label": 80,
-                "variant": "typescriptinfo"
+                "variant": "typescriptinfo",
+                "pathColor": "yellow",
+                "textColor": "#f88"
             },
             {
                 "name": "Jquery",
                 "img": "jquery.jpg",
                 "label": 75,
-                "variant": "jqueryinfo"
+                "variant": "jqueryinfo",
+                "pathColor": "deepblue",
+                "textColor": "#f88"
             },
             {
                 "name": "Bootstrap",
                 "img": "bootstrap",
                 "label": 50,
-                "variant": "spol"
+                "variant": "spol",
+                "pathColor": "orange",
+                "textColor": "#f88"
             }
         ]
     },

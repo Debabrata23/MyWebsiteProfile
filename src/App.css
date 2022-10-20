@@ -40,7 +40,7 @@ body {
 .navigatecertificateMobile {
   /* background-image: linear-gradient(110.3deg, #031603, #231362); */
   margin-top: 4%;
-  border:2px solid;
+
   background-image: url('./images/grid-waves-lu.jpg') !important;
   
 }
@@ -48,7 +48,7 @@ body {
 .navigatecertificate {
   /* background-image: linear-gradient(110.3deg, #031603, #231362); */
   margin-top: 4%;
-  border:2px solid;
+ 
   background-image: url('./images/grid-waves-lu.jpg') !important;
 }
 
@@ -81,15 +81,23 @@ body {
 }
 .navigateHome {
   background-image: url('./images/J4x.gif');
+  
   /* background-image: linear-gradient(110.3deg, #031603, #231362); */
   margin-top: 5%
 }
+.navigateHome::before {
+  background-image: url('./images/J4x.gif');
+  opacity: 0.4;
+  /* background-image: linear-gradient(110.3deg, #031603, #231362); */
+  margin-top: 5%
+}
+
 
 .workexpdivMobile {
   /* background: linear-gradient(110.3deg, #031603, #231362); */
   
   margin-top: 4% !important;
-  border: 2px solid !important;
+
   background-image: url('./images/grid-waves-lu.jpg') !important;
   
 }
@@ -101,7 +109,7 @@ body {
   -o-background-size: cover;
   background-size: cover; */
   margin-top: 4% !important;
-  border: 2px solid !important; 
+ 
   background-image: url('./images/grid-waves-lu.jpg') !important;
 }
 
@@ -564,10 +572,24 @@ body {
   /* margin-top: 4% !important;
     margin-left: 6% !important; */
 }
+.CircularProgressbar .CircularProgressbar-trail
+{
+  stroke: none !important;
+}
+.circprogress
+{
+  padding: 9% !important;
+}
+.titleskill
+{
+  margin-left: 25%;
+}
 
 .imgdata {
-  width: 18% !important;
-  padding: 2% !important;
+ 
+  width: 26% !important;
+  /* padding: 2% !important; */
+  margin-left: 35% !important;
 }
 
 @keyframes fadeIn {
