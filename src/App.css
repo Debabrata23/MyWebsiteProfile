@@ -532,10 +532,20 @@ body {
   width: 27% !important;
   margin-left: 58% !important;
 }
-
+.animatedDiv
+{
+  width: 100% !important;
+}
 .certTiltle {
   font-family: serif;
   font-weight: 200;
+  margin-left: 3%;
+}
+.certTiltleMob
+{
+  font-family: serif;
+  font-weight: 200;
+  font-size: 10px;
   margin-left: 3%;
 }
 
@@ -604,8 +614,10 @@ body {
 .divSkillMobile
 {
   width: 315px !important;
-    border-radius: 14px !important;
-    padding: 10% !important;
+  border-radius: 14px !important;
+  /* padding: 10% !important; */
+  padding-bottom: 6% !important;
+  margin-left: 8% !important;
     
 }
 .div-skill-mob

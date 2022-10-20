@@ -97,7 +97,7 @@ const Certifications = (props) => {
         <ScrollAnimation animateIn='animate__bounceInRight'><Row className="pageheader"><span className="pageheaderspan">CERTIFICATION & SKILLS</span><div className='seperator'></div></Row></ScrollAnimation>
         <Row className="certificatediv">
           <Col lg={true} className="maindivSkillMob">
-            <ScrollAnimation animateIn='animate__fadeIn'>
+            <ScrollAnimation animateIn='animate__bounceInLeft' className='animatedDiv'>
               <Row className="divSkillMobile">
                 <Row className="skillHeader"><Col lg={true} className='seperatorSubMob'><div>Skills</div></Col></Row>
                 <Container className='div-skill-mob'>
@@ -118,7 +118,7 @@ const Certifications = (props) => {
                 </Container>
               </Row>
             </ScrollAnimation>
-            <ScrollAnimation animateIn='animate__fadeIn'>
+            <ScrollAnimation animateIn='animate__bounceInLeft' className='animatedDiv'>
               <Row className="divSkillMobile">
                 <Col lg={true} className="certificationCol">
                   <ScrollAnimation animateIn='animate__fadeIn'>
@@ -126,7 +126,7 @@ const Certifications = (props) => {
                     <Container>
                       {props.data.ceritificate.info.map((cert, index) => {
                         return (<Row>
-                          <div><img className="imgCertMob" src={constantfunction.getimagesoure(cert.certificateimg)} /><span className="certTiltle">{cert.certificatetitlename}</span></div>
+                          <div><img className="imgCertMob" src={constantfunction.getimagesoure(cert.certificateimg)} /><span className="certTiltleMob">{cert.certificatetitlename}</span></div>
                           <Button className="certbuttonMob" onClick={() => clickDownloadCert(cert.certificatetitle)} variant="outline-info"><DownloadRoundedIcon />{cert.certificatetitle}</Button>
                         </Row>)
                       })}
