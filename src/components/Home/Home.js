@@ -5,6 +5,9 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import pdf from '../../pdfs/Debabrata_Saha_Resume_2.pdf';
+import { bounceInDown,fadeIn } from 'react-animations';
+import DownloadRoundedIcon from '@mui/icons-material/DownloadRounded';
+import Radium, {StyleRoot} from 'radium';
 import TopNavigation from '../TopNavigation';
 import PhoneInTalkRoundedIcon from '@mui/icons-material/PhoneInTalkRounded';
 import { useEffect, useState } from 'react';
@@ -51,7 +54,16 @@ const Home = () => {
   const clickWork = (props) => {
 
   }
- 
+  const styles = {
+    bounce: {
+      animation: 'x 6s',
+      animationName: Radium.keyframes(bounceInDown, 'bounceInDown')
+    },
+    fade:{
+      animation:'x 6s',
+      animationName:Radium.keyframes(fadeIn,'fadeIn')
+    }
+  }
   return (
     <Container className="mainContainer">
     <BrowserView><TopNavigation /></BrowserView>
@@ -60,19 +72,21 @@ const Home = () => {
       <div className='navigateHome'>
         <Row className='maininfo'>
           <Col lg={true} className='imgprofile'>
-            <div class="myimage"><img src={constantfunction.getimagesoure(portfoliojson.basicInfo.profileimg)} alt="#" /></div>
+          <StyleRoot><div class="myimage" style={styles.bounce}>
+          <img src={constantfunction.getimagesoure(portfoliojson.basicInfo.profileimg)} alt="#" /></div></StyleRoot>
+            
           </Col>
           <Col lg={true} className="descriptionHome">
           <div className='Infodiv'>
-            <Row ><span className='headerTxt'>{portfoliojson.basicInfo.candidatename}</span></Row>
+          <Row ><StyleRoot><span className='headerTxt' style={styles.fade}>Hi I'M {portfoliojson.basicInfo.candidatename}</span></StyleRoot></Row>
             <Row><strong><span className='abtmetxt'>{portfoliojson.basicInfo.titleprofile}</span></strong></Row>
             <Row><div className='descriptionHeader'>{portfoliojson.basicInfo.description}</div></Row>
-            <Row><BrowserView><Button className="downResume" onClick={() => clickdownload()} variant="outline-info">Download CV</Button></BrowserView></Row>
+            <Row><BrowserView><Button className="downResume" onClick={() => clickdownload()} variant="outline-info"><DownloadRoundedIcon />Download CV</Button></BrowserView></Row>
             <Row><Col lg={true}>
               <Row><strong><span className='abtmetxt'>{portfoliojson.basicInfo.titleContact}</span></strong></Row>
               <Row><span className='abtmeinfo'><PhoneInTalkRoundedIcon /> {portfoliojson.basicInfo.phone}</span></Row>
               <Row><span className='abtmeinfo'><MailOutlineRoundedIcon /><a href={`mailto:${portfoliojson.basicInfo.mail}`}> : {portfoliojson.basicInfo.mail}</a></span></Row>
-              <Row><span className='abtmeinfo'><LinkedInIcon color='blue' onClick={() => redirectLink()} /> : {portfoliojson.basicInfo.linkedin}</span></Row>
+              <Row><span className='abtmeinfo'><LinkedInIcon color='blue' onClick={() => redirectLink()} /> {portfoliojson.basicInfo.linkedin}</span></Row>
 
             </Col></Row>
             </div>
@@ -87,16 +101,16 @@ const Home = () => {
         <Row className='maininfo'>
           <Col lg={true} className='imgprofile'>
 
-            <div class="myimageMobile"><img src={constantfunction.getimagesoure(portfoliojson.basicInfo.profileimg)} alt="#" /></div>
+          <StyleRoot><div class="myimageMobile" style={styles.bounce}><img src={constantfunction.getimagesoure(portfoliojson.basicInfo.profileimg)} alt="#" /></div></StyleRoot>
           </Col>
         </Row>
         <Row className='maininfo'>
         <Col lg={true} className="descriptionHome">
         <div className='InfodivMob'>
-          <Row className="profilediv"><span className='headerTxtMobile'>{portfoliojson.basicInfo.candidatename}</span></Row>
+        <StyleRoot><Row className="profilediv"> <span className='headerTxtMobile' style={styles.fade}>Hi I'M {portfoliojson.basicInfo.candidatename}</span></Row></StyleRoot>
           <Row className="profilediv"><strong><span className='abtmetxt'>{portfoliojson.basicInfo.titleprofile}</span></strong></Row>
           <Row className="profilediv"><div className='descriptionHeaderMobile'>{portfoliojson.basicInfo.description}</div></Row>
-          <Row className="profilediv"><MobileView><Button className="downResumeMobile" onClick={() => clickdownload()} variant="outline-info">Download CV</Button></MobileView></Row>
+          <Row className="profilediv"><MobileView><Button className="downResumeMobile" onClick={() => clickdownload()} variant="outline-info"><DownloadRoundedIcon/>Download CV</Button></MobileView></Row>
           <Row className="profilediv"><Col lg={true}>
             <Row><strong><span className='abtmetxt'>{portfoliojson.basicInfo.titleContact}</span></strong></Row>
             <Row><span className='abtmeinfoMob'><PhoneInTalkRoundedIcon /> {portfoliojson.basicInfo.phone}</span></Row>
