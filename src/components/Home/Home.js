@@ -15,6 +15,7 @@ import MailOutlineRoundedIcon from '@mui/icons-material/MailOutlineRounded';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import WorkExperience from '../WorkExperience/WorkExperience';
 import Certifications from '../Certifications/Certifications';
+
 import { useContext } from 'react';
 import userCOntext from '../TopNavigation'
 
@@ -78,7 +79,8 @@ const Home = () => {
           </Col>
           <Col lg={true} className="descriptionHome">
           <div className='Infodiv'>
-          <Row ><StyleRoot><span className='headerTxt' style={styles.fade}>Hi I'M {portfoliojson.basicInfo.candidatename}</span></StyleRoot></Row>
+          <Row><StyleRoot><span className={`headerTxt`}>{portfoliojson.basicInfo.candidatename}</span></StyleRoot>
+          </Row>
             <Row><strong><span className='abtmetxt'>{portfoliojson.basicInfo.titleprofile}</span></strong></Row>
             <Row><div className='descriptionHeader'>{portfoliojson.basicInfo.description}</div></Row>
             <Row><BrowserView><Button className="downResume" onClick={() => clickdownload()} variant="outline-info"><DownloadRoundedIcon />Download CV</Button></BrowserView></Row>
@@ -107,7 +109,7 @@ const Home = () => {
         <Row className='maininfo'>
         <Col lg={true} className="descriptionHome">
         <div className='InfodivMob'>
-        <StyleRoot><Row className="profilediv"> <span className='headerTxtMobile' style={styles.fade}>Hi I'M {portfoliojson.basicInfo.candidatename}</span></Row></StyleRoot>
+        <StyleRoot><Row className="profilediv"> <span className='headerTxtMobile' style={styles.fade}>{portfoliojson.basicInfo.candidatename}</span></Row></StyleRoot>
           <Row className="profilediv"><strong><span className='abtmetxt'>{portfoliojson.basicInfo.titleprofile}</span></strong></Row>
           <Row className="profilediv"><div className='descriptionHeaderMobile'>{portfoliojson.basicInfo.description}</div></Row>
           <Row className="profilediv"><MobileView><Button className="downResumeMobile" onClick={() => clickdownload()} variant="outline-info"><DownloadRoundedIcon/>Download CV</Button></MobileView></Row>

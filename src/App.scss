@@ -707,7 +707,13 @@ body {
 }
 
 .headerTxtMobile {
-  
+  font: 26px Monaco, MonoSpace;
+  height: 200px;
+  position: absolute;
+  width: 20px;
+  left: 0;
+  top: 0;
+  transform-origin: bottom center;
   margin-left: 10%;
   font-size: x-large;
   color: red;
@@ -715,10 +721,19 @@ body {
   font-style: italic;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-
+.hdrtext
+{
+  border-radius: 50% !important;
+  transform: rotate(-50deg) !important;
+}
 .headerTxt {
-  padding-top: 22%;
-  margin-left: 22%;
+  font: 26px Monaco, MonoSpace;
+  height: 200px;
+  position: absolute;
+  width: 20px;
+  left: 0;
+  top: 0;
+  transform-origin: bottom center;
   font-size: x-large;
   color: red;
   font-weight: 700;
@@ -727,11 +742,18 @@ body {
 }
 
 .downResumeMobile {
-  width: 56% !important;
+  width: 60% !important;
   margin-top: 3% !important;
   margin-left: 32% !important;
 }
-
+@for $i from 1 through 500
+ {
+  .char#{$i}{
+    transform:(rotate(($i*6)+deg));
+    -webkit-transform: (rotate(($i*6)+deg));
+     
+  }
+}
 .downResume {
   width: 38% !important;
   margin-top: 3% !important;
