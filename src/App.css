@@ -7,6 +7,7 @@
 .maininfo {
   animation: fadeIn 5s !important;
   height: 100%;
+  position: relative !important;
 
 }
 
@@ -54,9 +55,24 @@ body {
 
 .navigateHomeMobile {
   /* background-image: linear-gradient(110.3deg, #031603, #231362); */
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  background-image: url('./images/source.gif');
+  background-size: cover;
   margin-top: 5%;
-  background-image: url('./images/J4x.gif');
-  
+ 
+}
+.navigateHomeMobile::before {
+  content: "";
+  position: absolute; 
+   top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px; 
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .Infodiv
 {
@@ -64,7 +80,7 @@ body {
     /* height: 50%; */
     /* margin-inline: 2%; */
     padding: 4%;
-    background-color: black;
+    
 }
 .profilediv
 {
@@ -79,18 +95,36 @@ body {
   padding: 4%;
   background-color: black;
 }
-.navigateHome {
-  background-image: url('./images/J4x.gif');
-  
-  /* background-image: linear-gradient(110.3deg, #031603, #231362); */
-  margin-top: 5%
+
+.navigateHome { 
+ 
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  background-image: url('./images/source.gif');
+  background-size: cover;
 }
-.navigateHome::before {
-  background-image: url('./images/J4x.gif');
-  opacity: 0.4;
-  /* background-image: linear-gradient(110.3deg, #031603, #231362); */
-  margin-top: 5%
+  .navigateHome::before {
+    content: "";
+    position: absolute; 
+     top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px; 
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+#myVideo
+{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
 }
+
 
 
 .workexpdivMobile {
@@ -189,6 +223,7 @@ body {
   position: fixed;
   width: 100%;
   border-radius: 46px !important;
+  z-index: 5 !important;
 
 }
 
