@@ -20,6 +20,7 @@ const Hamburger = () => {
      setHome(false);
      setWork(false);
      setCert(true);
+     setOpenHam(false);
      //let domcert = document.getElementsByClassName('navigatecertificate');
      //domcert[0].scrollIntoView(true);
      var element = document.getElementsByClassName('navigatecertificateMobile');
@@ -41,6 +42,7 @@ const Hamburger = () => {
      setHome(false);
      setWork(true);
      setCert(false);
+     setOpenHam(false);
      var element = document.getElementsByClassName('workexpdivMobile');
      var headerOffset = 120;
      var elementPosition = element[0].getBoundingClientRect().top;
@@ -58,6 +60,7 @@ const Hamburger = () => {
      setHome(true);
      setWork(false);
      setCert(false);
+     setOpenHam(false);
      var element = document.getElementsByClassName('navigateHomeMobile');
      var headerOffset = 100;
      var elementPosition = element[0].getBoundingClientRect().top;
