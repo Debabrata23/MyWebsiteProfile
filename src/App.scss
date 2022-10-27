@@ -727,18 +727,14 @@ body {
   transform: rotate(-50deg) !important;
 }
 .headerTxt {
-  font: 26px Monaco, MonoSpace;
-  height: 200px;
-  position: absolute;
-  width: 20px;
-  left: 0;
-  top: 0;
-  transform-origin: bottom center;
-  font-size: x-large;
   color: red;
-  font-weight: 700;
-  font-style: italic;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font: 26px Monaco,MonoSpace;
+    /* font-family: Cambria,Cochin,Georgia,Times,Times New Roman,serif; */
+    font-size: x-large;
+    font-style: italic;
+    font-weight: 700;
+    height: 200px;
+  
 }
 
 .downResumeMobile {
